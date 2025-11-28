@@ -33,6 +33,7 @@ namespace Durak
                 }
             } 
         }
+        public int Number { get; set; }
         public Suit Suit { get; set; }
         public static Suit EmpSuit { get; set; } // Empowered Suit
         public string CardImg {  get; set; }
@@ -41,7 +42,13 @@ namespace Durak
         {
             Suit = suit;
             Power = num;
+            Number = num % 13 == 0 ? 13 : num % 13;
             CardImg = num + ".png";
+        }
+
+        public override String ToString()
+        {
+            return Number + " of " + Suit;
         }
     }
 }

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|c:\\users\\14385\\downloads\\durak\\durak\\durak\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|c:\\users\\14385\\downloads\\durak\\durak\\durak\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\suit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -52,8 +52,7 @@
               "RelativeToolTip": "Durak\\Suit.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T02:06:20.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T02:06:20.929Z"
             },
             {
               "$type": "Document",
@@ -63,35 +62,34 @@
               "RelativeDocumentMoniker": "Durak\\Deck.cs",
               "ToolTip": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Deck.cs",
               "RelativeToolTip": "Durak\\Deck.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwA0AAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T02:05:48.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Card.cs",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Card.cs",
               "RelativeDocumentMoniker": "Durak\\Card.cs",
               "ToolTip": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Card.cs",
               "RelativeToolTip": "Durak\\Card.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T02:04:01.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Form1.cs",
               "RelativeDocumentMoniker": "Durak\\Form1.cs",
               "ToolTip": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Form1.cs [Design]",
               "RelativeToolTip": "Durak\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T02:03:44.893Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-28T02:03:44.893Z"
             }
           ]
         }

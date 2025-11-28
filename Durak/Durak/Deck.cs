@@ -8,12 +8,16 @@ namespace Durak
 {
     internal class Deck
     {
-        List<Card> deck;
+        private List<Card> deck;
+        private int size;
 
-        public Deck()
+        public Deck() // need to make another constructor for the player hand
         {
             deck = new List<Card>();
-            switch (new Random().Next(4))
+            size = 0;
+
+
+            switch (new Random().Next(4)) // need to actually chose a card
             {
                 case 0:
                     Card.EmpSuit = Suit.Heart; 
@@ -29,9 +33,27 @@ namespace Durak
                     break;
             }
 
+            int suit = -1;
             for (int i = 1; i <= 52; i++)
             {
-                
+                if (i % 13 == 1)
+                {
+                    suit++;
+                }
+                deck.Add(new Card(i, (Suit)suit));
+                size++;
+            }
+
+            shuffle();
+        }
+
+        private void shuffle()
+        {
+            for (int i = size - 1; i > 0; i--) {
+                int rand = new Random().Next(i + 1);
+                Card tmp = deck[i];
+                deck[i] = deck[rand];
+                deck[rand] = tmp;
             }
         }
     }
