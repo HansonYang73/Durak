@@ -16,5 +16,21 @@ namespace Durak
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Deck deck = new Deck();
+            Deck p1 = new Deck(deck);
+            Deck p2 = new Deck(deck);
+
+            Console.WriteLine("Deck:");
+            deck.PrintDeck();
+            Console.WriteLine("p1:");
+            p1.PrintDeck();
+            Console.WriteLine("p2:");
+            p2.PrintDeck();
+
+            Console.WriteLine(Card.EmpSuit);
+        }
     }
 }

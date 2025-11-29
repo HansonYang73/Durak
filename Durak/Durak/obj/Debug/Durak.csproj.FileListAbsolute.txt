@@ -7,3 +7,5 @@ C:\Users\14385\Downloads\Durak\Durak\Durak\obj\Debug\Durak.csproj.GenerateResour
 C:\Users\14385\Downloads\Durak\Durak\Durak\obj\Debug\Durak.csproj.CoreCompileInputs.cache
 C:\Users\14385\Downloads\Durak\Durak\Durak\obj\Debug\Durak.exe
 C:\Users\14385\Downloads\Durak\Durak\Durak\obj\Debug\Durak.pdb
+C:\Users\14385\Downloads\Durak\Durak\Durak\obj\Debug\Durak.exe.config
+C:\Users\14385\Downloads\Durak\Durak\Durak\obj\Debug\Durak.Form1.resources

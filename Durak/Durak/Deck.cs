@@ -9,29 +9,12 @@ namespace Durak
     internal class Deck
     {
         private List<Card> deck;
-        private int size;
+        public int Size { get; set; }
 
         public Deck() // need to make another constructor for the player hand
         {
             deck = new List<Card>();
-            size = 0;
-
-
-            switch (new Random().Next(4)) // need to actually chose a card
-            {
-                case 0:
-                    Card.EmpSuit = Suit.Heart; 
-                    break;
-                case 1:
-                    Card.EmpSuit = Suit.Diamond;
-                    break;
-                case 2:
-                    Card.EmpSuit = Suit.Club;
-                    break;
-                case 3:
-                    Card.EmpSuit = Suit.Spade;
-                    break;
-            }
+            Size = 0;
 
             int suit = -1;
             for (int i = 1; i <= 52; i++)
@@ -40,21 +23,79 @@ namespace Durak
                 {
                     suit++;
                 }
-                deck.Add(new Card(i, (Suit)suit));
-                size++;
+                AddCard(new Card(i, (Suit)suit));
+
             }
 
-            shuffle();
+            Shuffle();
+
+            Card.EmpSuit = deck[0].Suit;
+            EmpowerTheCards();
+
+            AddCard(Draw()); // Put the First empowered card at the end of the deck
         }
 
-        private void shuffle()
+        public Deck(Deck mainDeck)
         {
-            for (int i = size - 1; i > 0; i--) {
-                int rand = new Random().Next(i + 1);
+            deck = new List<Card>();
+            Size = 0;
+
+            for (int i = 0; i < 6; i++)
+            {
+                AddCard(mainDeck.Draw());
+            }
+        }
+
+        private void Shuffle()
+        {
+            Random rnd = new Random();
+            for (int i = Size - 1; i > 0; i--) {
+                int rand = rnd.Next(i + 1);
                 Card tmp = deck[i];
                 deck[i] = deck[rand];
                 deck[rand] = tmp;
             }
         }
+
+        private void EmpowerTheCards()
+        {
+            deck.ForEach(card =>
+            {
+                if (card.Suit == Card.EmpSuit)
+                {
+                    card.Power += 13;
+                }
+            });
+        }
+
+        public void AddCard(Card card)
+        {
+            deck.Add(card);
+            Size++;
+        }
+
+        public Card Draw()
+        {
+            Size--;
+            Card removedCard = deck[0];
+            deck.RemoveAt(0);
+            return removedCard;
+        }
+
+        public Card Play(Card card)
+        {
+            Size--;
+            deck.Remove(card);
+            return card;
+        }
+
+        public void PrintDeck()
+        {
+            foreach (Card card in deck)
+            {
+                Console.WriteLine(card);
+            }
+        }
+
     }
 }

@@ -16,7 +16,7 @@ namespace Durak
             } 
             set
             {
-                power = value % 13;
+                power = value;
                 switch (power)
                 {
                     case 0:
@@ -25,11 +25,6 @@ namespace Durak
                     case 1:
                         power = 14;
                         break;
-                }
-
-                if (Suit == EmpSuit)
-                {
-                    power += 13;
                 }
             } 
         }
@@ -41,14 +36,14 @@ namespace Durak
         public Card(int num, Suit suit)
         {
             Suit = suit;
-            Power = num;
+            Power = num % 13;
             Number = num % 13 == 0 ? 13 : num % 13;
             CardImg = num + ".png";
         }
 
         public override String ToString()
         {
-            return Number + " of " + Suit;
+            return Number + " of " + Suit + " Power: " + Power;
         }
     }
 }
