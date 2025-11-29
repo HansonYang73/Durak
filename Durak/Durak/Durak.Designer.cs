@@ -1,6 +1,6 @@
 ﻿namespace Durak
 {
-    partial class DurakForm
+    partial class Durak
     {
         /// <summary>
         /// Required designer variable.
@@ -140,7 +140,7 @@
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
-            // DurakForm
+            // Durak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -154,7 +154,7 @@
             this.Controls.Add(this.op1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "DurakForm";
+            this.Name = "Durak";
             this.Text = "Durak";
             this.Load += new System.EventHandler(this.durakForm_Load);
             this.ResumeLayout(false);

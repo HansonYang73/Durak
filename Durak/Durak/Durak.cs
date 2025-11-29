@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Durak
 {
-    public partial class DurakForm : Form
+    public partial class Durak : Form
     {
         private int playerCount;
         private List<String> players;
-        public DurakForm()
+        public Durak()
         {
             InitializeComponent();
             playerCount = 1;
@@ -59,7 +59,7 @@ namespace Durak
                 players.Add(op3ComboBox.Text);
                 playerCount++;
             }
-
+            new GameBoard();
             // need to add more code
             // not sure about the variable players and playercount being in this form
         }
