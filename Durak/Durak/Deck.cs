@@ -11,7 +11,7 @@ namespace Durak
         private List<Card> deck;
         public int Size { get; set; }
 
-        public Deck() // need to make another constructor for the player hand
+        public Deck() 
         {
             deck = new List<Card>();
             Size = 0;
@@ -19,11 +19,10 @@ namespace Durak
             int suit = -1;
             for (int i = 1; i <= 52; i++)
             {
-                if (i % 13 == 1)
-                {
-                    suit++;
-                }
+                if (i % 13 == 1) suit++;
+                if (i % 13 == 2) i += 4; // skips 2,3,4,5
                 AddCard(new Card(i, (Suit)suit));
+
 
             }
 
@@ -35,7 +34,7 @@ namespace Durak
             AddCard(Draw()); // Put the First empowered card at the end of the deck
         }
 
-        public Deck(Deck mainDeck)
+        public Deck(Deck mainDeck) //Hand
         {
             deck = new List<Card>();
             Size = 0;

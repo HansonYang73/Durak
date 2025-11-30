@@ -9,3 +9,4 @@ C:\Users\14385\Downloads\Durak\Durak\Durak\obj\Debug\Durak.exe
 C:\Users\14385\Downloads\Durak\Durak\Durak\obj\Debug\Durak.pdb
 C:\Users\14385\Downloads\Durak\Durak\Durak\obj\Debug\Durak.exe.config
 C:\Users\14385\Downloads\Durak\Durak\Durak\obj\Debug\Durak.Durak.resources
+C:\Users\14385\Downloads\Durak\Durak\Durak\obj\Debug\Durak.GameBoard.resources

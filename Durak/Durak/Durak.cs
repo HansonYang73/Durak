@@ -19,6 +19,7 @@ namespace Durak
             InitializeComponent();
             playerCount = 1;
             players = new List<String>();
+            players.Add("Player");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -59,7 +60,9 @@ namespace Durak
                 players.Add(op3ComboBox.Text);
                 playerCount++;
             }
-            new GameBoard();
+
+            Hide();
+            new GameBoard().Show();
             // need to add more code
             // not sure about the variable players and playercount being in this form
         }
