@@ -26,7 +26,7 @@ namespace Durak
         //      - Main attacker attacking the player to its left (the defender)
         //      - First attack can be any card and is made by the main attacker
         //      - Afterwards, anyone (maybe in order) can attack as long as the number is on the board
-        //      - Can only attack if the defender has more than 0 cards (if cards on board < defender hand)
+        //      - Can only attack the attaacker 6 times 
         // defend
         //      - Can only defend with a card of (same suit AND higher power) OR (is empowered)
         //      - If the attacking card is also empowered, need to defend with a higher empowered card
