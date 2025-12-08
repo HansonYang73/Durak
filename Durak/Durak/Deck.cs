@@ -104,14 +104,15 @@ namespace Durak
 
         public bool ContainsNumber(int n)
         {
+            bool contains = false;
             deck.ForEach((card) =>
             {
                 if (card.Number == n)
                 {
-                    //return true;
+                    contains = true;
                 }
             });
-            return false;
+            return contains;
         }
     }
 }
