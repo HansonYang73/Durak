@@ -16,17 +16,17 @@ namespace Durak
             BoardDeck = boardDeck;
         }
 
-        public Card Attack()
-        {
-            if (CanAttack())
-            {
+        //public Card Attack()
+        //{
+        //    if (CanAttack())
+        //    {
 
-            }
-        }
+        //    }
+        //}
 
-        private bool CanAttack()
-        {
+        //private bool CanAttack()
+        //{
 
-        }
+        //}
     }
 }
