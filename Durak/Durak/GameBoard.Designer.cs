@@ -28,94 +28,153 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            this.mainDeck = new System.Windows.Forms.PictureBox();
+            this.card1 = new System.Windows.Forms.PictureBox();
+            this.card2 = new System.Windows.Forms.PictureBox();
+            this.card3 = new System.Windows.Forms.PictureBox();
+            this.card4 = new System.Windows.Forms.PictureBox();
+            this.card5 = new System.Windows.Forms.PictureBox();
+            this.card6 = new System.Windows.Forms.PictureBox();
+            this.empowerCard = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.mainPlayerCardsImages = new System.Windows.Forms.ImageList(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.mainDeck)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empowerCard)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // mainDeck
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(971, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "deck";
+            this.mainDeck.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.mainDeck.Image = global::Durak.Properties.Resources.back;
+            this.mainDeck.Location = new System.Drawing.Point(923, 193);
+            this.mainDeck.Name = "mainDeck";
+            this.mainDeck.Size = new System.Drawing.Size(130, 182);
+            this.mainDeck.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mainDeck.TabIndex = 6;
+            this.mainDeck.TabStop = false;
+            this.mainDeck.Click += new System.EventHandler(this.mainDeck_Click);
+            this.mainDeck.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
+            this.mainDeck.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
-            // label2
+            // card1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(458, 440);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "player hand";
+            this.card1.Location = new System.Drawing.Point(293, 442);
+            this.card1.Name = "card1";
+            this.card1.Size = new System.Drawing.Size(103, 163);
+            this.card1.TabIndex = 7;
+            this.card1.TabStop = false;
             // 
-            // label3
+            // card2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(116, 251);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "op3 hand";
+            this.card2.Location = new System.Drawing.Point(402, 442);
+            this.card2.Name = "card2";
+            this.card2.Size = new System.Drawing.Size(103, 163);
+            this.card2.TabIndex = 9;
+            this.card2.TabStop = false;
             // 
-            // label4
+            // card3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(474, 74);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "op 1 hand";
+            this.card3.Location = new System.Drawing.Point(511, 442);
+            this.card3.Name = "card3";
+            this.card3.Size = new System.Drawing.Size(103, 163);
+            this.card3.TabIndex = 10;
+            this.card3.TabStop = false;
             // 
-            // label5
+            // card4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(864, 272);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "op 2 hand";
+            this.card4.Location = new System.Drawing.Point(620, 442);
+            this.card4.Name = "card4";
+            this.card4.Size = new System.Drawing.Size(103, 163);
+            this.card4.TabIndex = 11;
+            this.card4.TabStop = false;
             // 
-            // label6
+            // card5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(458, 251);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(129, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "where the cards would go";
+            this.card5.Location = new System.Drawing.Point(729, 442);
+            this.card5.Name = "card5";
+            this.card5.Size = new System.Drawing.Size(103, 163);
+            this.card5.TabIndex = 12;
+            this.card5.TabStop = false;
+            // 
+            // card6
+            // 
+            this.card6.Location = new System.Drawing.Point(838, 442);
+            this.card6.Name = "card6";
+            this.card6.Size = new System.Drawing.Size(103, 163);
+            this.card6.TabIndex = 13;
+            this.card6.TabStop = false;
+            // 
+            // empowerCard
+            // 
+            this.empowerCard.Location = new System.Drawing.Point(820, 233);
+            this.empowerCard.Name = "empowerCard";
+            this.empowerCard.Size = new System.Drawing.Size(177, 96);
+            this.empowerCard.TabIndex = 14;
+            this.empowerCard.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(216, 593);
+            this.textBox1.TabIndex = 15;
+            // 
+            // mainPlayerCardsImages
+            // 
+            this.mainPlayerCardsImages.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.mainPlayerCardsImages.ImageSize = new System.Drawing.Size(16, 16);
+            this.mainPlayerCardsImages.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // GameBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 557);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1065, 627);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.card6);
+            this.Controls.Add(this.card5);
+            this.Controls.Add(this.card4);
+            this.Controls.Add(this.card3);
+            this.Controls.Add(this.card2);
+            this.Controls.Add(this.card1);
+            this.Controls.Add(this.mainDeck);
+            this.Controls.Add(this.empowerCard);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "GameBoard";
             this.Text = "GameBoard";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameBoard_FormClosed);
+            this.Load += new System.EventHandler(this.GameBoard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.mainDeck)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.card6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empowerCard)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox mainDeck;
+        private System.Windows.Forms.PictureBox card1;
+        private System.Windows.Forms.PictureBox card2;
+        private System.Windows.Forms.PictureBox card3;
+        private System.Windows.Forms.PictureBox card4;
+        private System.Windows.Forms.PictureBox card5;
+        private System.Windows.Forms.PictureBox card6;
+        private System.Windows.Forms.PictureBox empowerCard;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ImageList mainPlayerCardsImages;
     }
 }

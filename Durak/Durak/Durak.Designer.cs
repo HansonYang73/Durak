@@ -52,10 +52,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(262, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 79);
+            this.label1.Size = new System.Drawing.Size(261, 73);
             this.label1.TabIndex = 1;
             this.label1.Text = "DURAK";
             // 
@@ -110,7 +110,7 @@
             "Hanson",
             "Shon",
             "Oliver"});
-            this.op2ComboBox.Location = new System.Drawing.Point(329, 128);
+            this.op2ComboBox.Location = new System.Drawing.Point(304, 128);
             this.op2ComboBox.Name = "op2ComboBox";
             this.op2ComboBox.Size = new System.Drawing.Size(121, 21);
             this.op2ComboBox.TabIndex = 6;
