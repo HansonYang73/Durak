@@ -50,23 +50,41 @@ namespace Durak
     {
 
 
-
+        private List<PictureBox> playersCards;
+        private List<PictureBox> attackingSlots;
+        private List<PictureBox> defendingSlots;
         private Deck deck;
         private Deck mainPlayer;
+        private string fightMode;
 
-        public Deck Deck
-        {
-            get {return deck;}
-            set {this.deck = value;}
-        
-        }
 
-       
+
+
+
         public GameBoard()
         {
             InitializeComponent();
             this.deck = new Deck();
             this.mainPlayer = new Deck(this.deck);
+            this.fightMode = "Attack";
+            empowerCard.Image = (Image)Properties.Resources.ResourceManager.GetObject(deck.Get(deck.Size - 1).CardImg);
+            Console.WriteLine(deck.Get(deck.Size - 1).CardImg);
+            empowerCard.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            playersCards = new List<PictureBox> { card1, card2, card3, card4, card5, card6 };
+            attackingSlots = new List<PictureBox> { cardAttack1, cardAttack2, cardAttack3, cardAttack4, cardAttack5, cardAttack6 };
+            defendingSlots = new List<PictureBox> { cardDefend1, cardDefend2, cardDefend3, cardDefend4, cardDefend5, cardDefend6 };
+            fillDeck();
+
+
+
+
+
+        }
+
+        public string FightMode
+
+        {
+            set { fightMode = value; }
 
         }
 
@@ -77,7 +95,8 @@ namespace Durak
 
         private void mainDeck_Click(object sender, EventArgs e)
         {
-            
+            fillDeck();
+
         }
 
         private void mainDeck_MouseEnter(object sender, EventArgs e)
@@ -94,6 +113,171 @@ namespace Durak
         private void GameBoard_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void fillDeck()
+        {
+            foreach (PictureBox pictureBox in playersCards)
+            {
+                if (pictureBox.Image == null)
+                {
+                    pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(deck.Draw().CardImg);
+
+                }
+                else
+                {
+                    continue;
+                }
+            }
+
+
+        }
+
+        private void card1_Click(object sender, EventArgs e)
+        {
+            attackOrDefend(card1);
+
+
+
+
+
+        }
+
+        private void card2_Click(object sender, EventArgs e)
+        {
+            attackOrDefend(card2);
+
+
+
+
+
+        }
+
+        private void card3_Click(object sender, EventArgs e)
+        {
+
+            attackOrDefend(card3);
+
+
+
+
+
+        }
+
+        private void card4_Click(object sender, EventArgs e)
+        {
+
+            attackOrDefend(card4);
+
+
+
+
+
+        }
+
+        private void card5_Click(object sender, EventArgs e)
+        {
+            attackOrDefend(card5);
+
+
+
+
+        }
+
+        private void card6_Click(object sender, EventArgs e)
+        {
+            attackOrDefend(card6);
+
+
+
+        }
+
+        private void attack(PictureBox card)
+        {
+            PictureBox pb = null;
+            foreach (PictureBox pictureBox in attackingSlots)
+            {
+                if (pictureBox.Image == null)
+                {
+                    pb = pictureBox;
+                    break;
+                }
+                else
+                {
+                    continue;
+
+                }
+
+            }
+            pb.Image = card.Image;
+
+
+
+
+        }
+        private void defend(PictureBox card)
+        {
+            PictureBox pb = null;
+            foreach (PictureBox pictureBox in defendingSlots)
+            {
+                if (pictureBox.Image == null)
+                {
+                    pb = pictureBox;
+                    break;
+                }
+                else
+                {
+                    continue;
+
+                }
+
+            }
+            pb.Visible = true;
+            pb.Image = card.Image;
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (this.fightMode == "Attack")
+            {
+                this.fightMode = "Defend";
+
+
+            }
+            else if (this.fightMode == "Defend")
+            {
+                this.fightMode = "Attack";
+
+
+            }
+            Console.WriteLine(fightMode);
+        }
+
+        private void attackOrDefend(PictureBox card)
+        {
+            if (fightMode == "Attack")
+            {
+
+                attack(card);
+
+
+            }
+            else
+            {
+                defend(card);
+
+
+            }
+            card.Image = null;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            attackingSlots.ForEach((picturebox) => picturebox.Image = null);
+            defendingSlots.ForEach((picturebox) => picturebox.Image = null);
         }
     }
 }

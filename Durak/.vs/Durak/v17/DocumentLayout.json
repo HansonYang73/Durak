@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|c:\\users\\14385\\downloads\\durak\\durak\\durak\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\gameboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\gameboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\gameboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\gameboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\gameboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\gameboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\bot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\durak.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\durak.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\gameboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\gameboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\gameboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\gameboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|c:\\users\\14385\\downloads\\durak\\durak\\durak\\gameboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\gameboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\durak.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|C:\\Users\\14385\\Downloads\\Durak\\Durak\\durak\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE58A14-E7B6-4F02-9D63-16111EE77586}|Durak\\Durak.csproj|solutionrelative:durak\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,33 +58,34 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "Card.cs",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Card.cs",
               "RelativeDocumentMoniker": "Durak\\Card.cs",
               "ToolTip": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Card.cs",
               "RelativeToolTip": "Durak\\Card.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwC4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T02:04:01.73Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "GameBoard.Designer.cs",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\GameBoard.Designer.cs",
               "RelativeDocumentMoniker": "Durak\\GameBoard.Designer.cs",
               "ToolTip": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\GameBoard.Designer.cs",
               "RelativeToolTip": "Durak\\GameBoard.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEkBAAAAAAAAAAAuwIIBAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T03:12:04.012Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Bot.cs",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Bot.cs",
               "RelativeDocumentMoniker": "Durak\\Bot.cs",
@@ -92,25 +93,24 @@
               "RelativeToolTip": "Durak\\Bot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T03:11:32.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T03:11:32.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "GameBoard.cs",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\GameBoard.cs",
               "RelativeDocumentMoniker": "Durak\\GameBoard.cs",
               "ToolTip": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\GameBoard.cs",
               "RelativeToolTip": "Durak\\GameBoard.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAACoAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAuwBoBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-30T02:33:03.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Durak.cs",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Durak.cs",
               "RelativeDocumentMoniker": "Durak\\Durak.cs",
@@ -118,12 +118,11 @@
               "RelativeToolTip": "Durak\\Durak.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAwwBwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T05:53:27.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T05:53:27.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Suit.cs",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Suit.cs",
               "RelativeDocumentMoniker": "Durak\\Suit.cs",
@@ -135,19 +134,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Durak.cs [Design]",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Durak.cs",
               "RelativeDocumentMoniker": "Durak\\Durak.cs",
               "ToolTip": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Durak.cs [Design]",
               "RelativeToolTip": "Durak\\Durak.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T02:03:44.893Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-28T02:03:44.893Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "GameBoard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\GameBoard.cs",
               "RelativeDocumentMoniker": "Durak\\GameBoard.cs",
@@ -165,14 +163,14 @@
               "RelativeDocumentMoniker": "Durak\\Deck.cs",
               "ToolTip": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Deck.cs",
               "RelativeToolTip": "Durak\\Deck.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAowCcAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAApwG4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T02:05:48.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Durak.Designer.cs",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Durak.Designer.cs",
               "RelativeDocumentMoniker": "Durak\\Durak.Designer.cs",
@@ -180,12 +178,11 @@
               "RelativeToolTip": "Durak\\Durak.Designer.cs",
               "ViewState": "AgIAAHUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T03:11:41.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T03:11:41.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Program.cs",
               "RelativeDocumentMoniker": "Durak\\Program.cs",

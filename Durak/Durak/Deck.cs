@@ -108,7 +108,7 @@ namespace Durak
             {
                 if (card.Number == n)
                 {
-                    return true;
+                    //return true;
                 }
             });
             return false;

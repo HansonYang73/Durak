@@ -38,7 +38,7 @@ namespace Durak
             Suit = suit;
             Power = num % 13;
             Number = num % 13 == 0 ? 13 : num % 13;
-            CardImg = num + ".png";
+            CardImg = "_" + num + ".png";
         }
 
         public override String ToString()
