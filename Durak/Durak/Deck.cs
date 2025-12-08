@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,7 +9,7 @@ namespace Durak
 {
     internal class Deck
     {
-        public List<Card> deck;
+        private List<Card> deck;
         public int Size { get; set; }
 
         public Deck() 
@@ -32,6 +33,11 @@ namespace Durak
             EmpowerTheCards();
 
             AddCard(Draw()); // Put the First empowered card at the end of the deck
+        }
+
+        public Card Get(int index)
+        {
+            return deck[index];
         }
 
         public Deck(Deck mainDeck) //Hand
