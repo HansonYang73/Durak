@@ -8,7 +8,7 @@ namespace Durak
 {
     internal class Deck
     {
-        private List<Card> deck;
+        public List<Card> deck;
         public int Size { get; set; }
 
         public Deck() 
@@ -96,5 +96,16 @@ namespace Durak
             }
         }
 
+        public bool ContainsNumber(int n)
+        {
+            deck.ForEach((card) =>
+            {
+                if (card.Number == n)
+                {
+                    return true;
+                }
+            });
+            return false;
+        }
     }
 }
