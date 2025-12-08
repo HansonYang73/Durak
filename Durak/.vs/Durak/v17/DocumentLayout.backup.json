@@ -46,11 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 7,
-=======
           "SelectedChildIndex": 8,
->>>>>>> 529977f60335018fb1fe888c9af17bfbf6df775a
           "Children": [
             {
               "$type": "Document",
@@ -68,21 +64,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-<<<<<<< HEAD
-              "Title": "GameBoard.cs",
-              "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\GameBoard.cs",
-              "RelativeDocumentMoniker": "Durak\\GameBoard.cs",
-              "ToolTip": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\GameBoard.cs",
-              "RelativeToolTip": "Durak\\GameBoard.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwCoAAAArAAAAAAAAAA==",
-=======
               "Title": "Bot.cs",
               "DocumentMoniker": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Bot.cs",
               "RelativeDocumentMoniker": "Durak\\Bot.cs",
               "ToolTip": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Bot.cs",
               "RelativeToolTip": "Durak\\Bot.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
->>>>>>> 529977f60335018fb1fe888c9af17bfbf6df775a
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T02:56:50.804Z",
               "EditorCaption": ""
@@ -165,11 +152,7 @@
               "RelativeDocumentMoniker": "Durak\\Deck.cs",
               "ToolTip": "C:\\Users\\14385\\Downloads\\Durak\\Durak\\Durak\\Deck.cs",
               "RelativeToolTip": "Durak\\Deck.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAAFAAAAAAAAAAAAAuwAoAAAAgAAAAAAAAAA==",
-=======
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
->>>>>>> 529977f60335018fb1fe888c9af17bfbf6df775a
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T02:05:48.032Z",
               "EditorCaption": ""
