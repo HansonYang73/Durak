@@ -45,15 +45,15 @@ namespace Durak
             return deck;
         }
 
-        public Deck(Deck mainDeck) //Hand
+        public Deck(bool isBot) //Hand
         {
             deck = new List<Card>();
             Size = 0;
 
-            for (int i = 0; i < 6; i++)
-            {
-                AddCard(mainDeck.Draw());
-            }
+            //for (int i = 0; i < 6; i++)
+            //{
+            //    AddCard(mainDeck.Draw());
+            //}
         }
 
         private void Shuffle()
@@ -84,11 +84,27 @@ namespace Durak
             Size++;
         }
 
+        public void AddDeck(Deck addingDeck)
+        {
+            while (addingDeck.Size > 0) 
+            {
+                AddCard(addingDeck.Draw());
+            }
+        }
+
         public Card Draw()
         {
             Size--;
             Card removedCard = deck[0];
             deck.RemoveAt(0);
+            return removedCard;
+        }
+
+        public Card Play(int index)
+        {
+            Size--;
+            Card removedCard = deck[index];
+            deck.RemoveAt(index);
             return removedCard;
         }
 
@@ -130,7 +146,7 @@ namespace Durak
         public void SortBySuit()
         {
             deck = deck.OrderBy(card => (int)card.Suit)
-                       .ThenBy(card => card.Number)
+                       .ThenBy(card => card.Power)
                        .ToList();
         }
 

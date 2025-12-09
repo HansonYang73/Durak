@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.mainDeck = new System.Windows.Forms.PictureBox();
             this.card1 = new System.Windows.Forms.PictureBox();
             this.card2 = new System.Windows.Forms.PictureBox();
@@ -36,7 +37,7 @@
             this.card5 = new System.Windows.Forms.PictureBox();
             this.card6 = new System.Windows.Forms.PictureBox();
             this.empowerCard = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.historyTextBox = new System.Windows.Forms.TextBox();
             this.cardAttack1 = new System.Windows.Forms.PictureBox();
             this.cardAttack2 = new System.Windows.Forms.PictureBox();
             this.cardAttack3 = new System.Windows.Forms.PictureBox();
@@ -51,6 +52,10 @@
             this.cardDefend6 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.endTurnButton = new System.Windows.Forms.Button();
+            this.sortingComboBox = new System.Windows.Forms.ComboBox();
+            this.waitingLabel = new System.Windows.Forms.Label();
+            this.waitngLabelTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.mainDeck)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.card1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.card2)).BeginInit();
@@ -156,16 +161,17 @@
             this.empowerCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.empowerCard.TabIndex = 14;
             this.empowerCard.TabStop = false;
+            this.empowerCard.Click += new System.EventHandler(this.empowerCard_Click);
             // 
-            // textBox1
+            // historyTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(216, 637);
-            this.textBox1.TabIndex = 15;
+            this.historyTextBox.Location = new System.Drawing.Point(12, 12);
+            this.historyTextBox.Multiline = true;
+            this.historyTextBox.Name = "historyTextBox";
+            this.historyTextBox.ReadOnly = true;
+            this.historyTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.historyTextBox.Size = new System.Drawing.Size(216, 637);
+            this.historyTextBox.TabIndex = 15;
             // 
             // cardAttack1
             // 
@@ -303,11 +309,53 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // endTurnButton
+            // 
+            this.endTurnButton.Location = new System.Drawing.Point(1064, 611);
+            this.endTurnButton.Name = "endTurnButton";
+            this.endTurnButton.Size = new System.Drawing.Size(89, 38);
+            this.endTurnButton.TabIndex = 30;
+            this.endTurnButton.Text = "End Turn";
+            this.endTurnButton.UseVisualStyleBackColor = true;
+            this.endTurnButton.Click += new System.EventHandler(this.endTurnButton_Click);
+            // 
+            // sortingComboBox
+            // 
+            this.sortingComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sortingComboBox.FormattingEnabled = true;
+            this.sortingComboBox.Items.AddRange(new object[] {
+            "Sort By Power",
+            "Sort By Suit",
+            "Sort By Number"});
+            this.sortingComboBox.Location = new System.Drawing.Point(1099, 486);
+            this.sortingComboBox.Name = "sortingComboBox";
+            this.sortingComboBox.Size = new System.Drawing.Size(121, 21);
+            this.sortingComboBox.TabIndex = 31;
+            this.sortingComboBox.SelectedIndexChanged += new System.EventHandler(this.sortingComboBox_SelectedIndexChanged);
+            // 
+            // waitingLabel
+            // 
+            this.waitingLabel.AutoSize = true;
+            this.waitingLabel.Location = new System.Drawing.Point(939, 30);
+            this.waitingLabel.Name = "waitingLabel";
+            this.waitingLabel.Size = new System.Drawing.Size(150, 13);
+            this.waitingLabel.TabIndex = 32;
+            this.waitingLabel.Text = "Waiting for [Player] to attack...";
+            // 
+            // waitngLabelTimer
+            // 
+            this.waitngLabelTimer.Enabled = true;
+            this.waitngLabelTimer.Interval = 500;
+            this.waitngLabelTimer.Tick += new System.EventHandler(this.waitngLabelTimer_Tick);
+            // 
             // GameBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1236, 661);
+            this.Controls.Add(this.waitingLabel);
+            this.Controls.Add(this.sortingComboBox);
+            this.Controls.Add(this.endTurnButton);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cardDefend6);
@@ -316,7 +364,7 @@
             this.Controls.Add(this.cardDefend3);
             this.Controls.Add(this.cardDefend2);
             this.Controls.Add(this.cardDefend1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.historyTextBox);
             this.Controls.Add(this.card6);
             this.Controls.Add(this.card5);
             this.Controls.Add(this.card4);
@@ -364,7 +412,7 @@
         #endregion
         private System.Windows.Forms.PictureBox mainDeck;
         private System.Windows.Forms.PictureBox empowerCard;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox historyTextBox;
         public System.Windows.Forms.PictureBox card1;
         public System.Windows.Forms.PictureBox card2;
         public System.Windows.Forms.PictureBox card3;
@@ -385,5 +433,9 @@
         public System.Windows.Forms.PictureBox cardDefend6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button endTurnButton;
+        private System.Windows.Forms.ComboBox sortingComboBox;
+        private System.Windows.Forms.Label waitingLabel;
+        private System.Windows.Forms.Timer waitngLabelTimer;
     }
 }

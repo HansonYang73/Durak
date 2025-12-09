@@ -91,10 +91,7 @@
             this.op1ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.op1ComboBox.FormattingEnabled = true;
             this.op1ComboBox.Items.AddRange(new object[] {
-            "AI",
-            "Hanson",
-            "Shon",
-            "Oliver"});
+            "Bot"});
             this.op1ComboBox.Location = new System.Drawing.Point(12, 128);
             this.op1ComboBox.Name = "op1ComboBox";
             this.op1ComboBox.Size = new System.Drawing.Size(121, 21);
@@ -106,10 +103,7 @@
             this.op2ComboBox.FormattingEnabled = true;
             this.op2ComboBox.Items.AddRange(new object[] {
             "None",
-            "AI",
-            "Hanson",
-            "Shon",
-            "Oliver"});
+            "Bot"});
             this.op2ComboBox.Location = new System.Drawing.Point(304, 128);
             this.op2ComboBox.Name = "op2ComboBox";
             this.op2ComboBox.Size = new System.Drawing.Size(121, 21);
@@ -121,10 +115,7 @@
             this.op3ComboBox.FormattingEnabled = true;
             this.op3ComboBox.Items.AddRange(new object[] {
             "None",
-            "AI",
-            "Hanson",
-            "Shon",
-            "Oliver"});
+            "Bot"});
             this.op3ComboBox.Location = new System.Drawing.Point(615, 128);
             this.op3ComboBox.Name = "op3ComboBox";
             this.op3ComboBox.Size = new System.Drawing.Size(121, 21);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +14,7 @@ using System.Windows.Forms;
 //      - 3. defender is bot to the left
 
 // draw cards until 6
+//      - i can remove the drawing till 6 from the deck constructor since it will draw 6 cards anyways
 //      - 1. Previous Defender
 //      - 2. Main attacker
 //      - 3. Other attacker clockwise
@@ -47,53 +48,34 @@ namespace Durak
 {
     public partial class GameBoard : Form
     {
-        private int turn;
 
+        private Deck boardDeck;
         private List<PictureBox> playersCards;
         private List<PictureBox> attackingSlots;
         private List<PictureBox> defendingSlots;
-
-        private int playerCount;
-
         private Deck deck;
-
-        private string fightMode;
-
-        private List<Deck> allDecks;
-        private Deck boardDeck;
         private Deck mainPlayer;
-        private Deck currentPlayer; // not sure what this is
+        private string fightMode;
+        private List<Deck> allDecks;
+        private Deck currentPlayer;
+        private int playerCount;
         private Deck currentDefender;
         private int mainAttackerIndex;
 
-        private int attacksThisRound;
-        private const int maxAttacksPerTurn = 6;
-        //private bool allowCardPlay;
-        private bool turnEnded;
-
         public GameBoard(int playerCount)
         {
-            InitializeComponent();
-            turn = 1;
-
-            turnEnded = false;
 
             mainAttackerIndex = 0;
-
             this.playerCount = playerCount;
-
-            this.deck = new Deck();
-            boardDeck = new Deck(false);
+            InitializeComponent();
             this.allDecks = new List<Deck>();
-
-            allDecks.Add(new Deck(false));
-            for (int i = 0; i < playerCount-1; i++)
+            this.deck = new Deck();
+            for (int i = 0; i < playerCount; i++)
             {
-                this.allDecks.Add(new Deck(true));
+                this.allDecks.Add(new Deck(this.deck));
             }
             this.mainPlayer = allDecks[0];
             this.fightMode = "Attack";
-
             empowerCard.Image = (Image)Properties.Resources.ResourceManager.GetObject(deck.Get(deck.Size - 1).CardImg);
             Console.WriteLine(deck.Get(deck.Size - 1).CardImg);
             empowerCard.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
@@ -101,14 +83,14 @@ namespace Durak
             attackingSlots = new List<PictureBox> { cardAttack1, cardAttack2, cardAttack3, cardAttack4, cardAttack5, cardAttack6 };
             defendingSlots = new List<PictureBox> { cardDefend1, cardDefend2, cardDefend3, cardDefend4, cardDefend5, cardDefend6 };
             Console.WriteLine(deck.Size);
-
-            drawDecks();
             fillDeck();
         }
 
         public string FightMode
+
         {
             set { fightMode = value; }
+
         }
 
         private void GameBoard_FormClosed(object sender, FormClosedEventArgs e)
@@ -118,11 +100,8 @@ namespace Durak
 
         private void mainDeck_Click(object sender, EventArgs e)
         {
-            if (turnEnded)
-            {
-                drawDecks();
-                fillDeck();
-            }
+            fillDeck();
+
         }
 
         private void mainDeck_MouseEnter(object sender, EventArgs e)
@@ -138,54 +117,51 @@ namespace Durak
 
         private void GameBoard_Load(object sender, EventArgs e)
         {
-            sortingComboBox.SelectedIndex = 0;
-        }
 
-        private void drawDecks()
-        {
-            foreach (Deck deck in allDecks)
-            {
-                while (deck.Size < 6 && this.deck.Size > 0)
-                {
-                    Card drawnCard = this.deck.Draw();
-                    deck.AddCard(drawnCard);
-                }
-            }
-
-            Sort();
-
-            turnEnded = false;
         }
 
         private void fillDeck()//add paramater later
         {
             int size = 0;
+        
+            foreach (Deck decks in allDecks)
+            {
+                if (decks.Size != 6)
+                {
+                    Card drawnCard = null;
+                    drawnCard = deck.Draw();
+                    decks.AddCard(drawnCard);
+                }
+
+
+            }
 
             foreach (PictureBox pictureBox in playersCards)
             {
-                //if (pictureBox.Image == null)
-                //{
-                    //if (deck.Size == 0)
-                    //{
-                    //    mainDeck.Visible = false;
-                    //    mainDeck.Enabled = false;
-                    //    empowerCard.Visible = false;
-                    //    empowerCard.Enabled = false;
-                    //    break;
-                    //}
-                    if (size < mainPlayer.Size)
+
+                Card drawnCard = null;
+                if (pictureBox.Image == null)
+                {
+
+                    if (deck.Size == 0)
                     {
-                        pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(mainPlayer.Get(size++).CardImg);
+                        mainDeck.Visible = false;
+                        mainDeck.Enabled = false;
+                        empowerCard.Visible = false;
+                        empowerCard.Enabled = false;
+                        break;
                     }
-                    else 
+
+                    else
                     {
-                        pictureBox.Image = null;
+                     pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(mainPlayer.GetDeck()[size++].CardImg);
                     }
-                //}
-                //else
-                //{
-                //    continue;
-                //}
+                }
+                else
+                {
+                    continue;
+                }
+
             }
             if (deck.Size == 0)
             {
@@ -193,12 +169,14 @@ namespace Durak
                 mainDeck.Enabled = false;
                 empowerCard.Visible = false;
                 empowerCard.Enabled = false;
+                
             }
-            else if (deck.Size == 1)
+            if (deck.Size == 1)
             {
                 mainDeck.Visible = false;
                 mainDeck.Enabled = false;
                 empowerCard.Enabled = true;
+                
             }
 
             Console.WriteLine(deck.Size);
@@ -206,43 +184,11 @@ namespace Durak
 
         private void card_Click(object sender, EventArgs e)
         {
-            PictureBox card = (PictureBox)sender;
-            int cardInd = playersCards.IndexOf(card);
-            if (cardInd < mainPlayer.Size)
-            {
-                attackOrDefend(card, cardInd);
-            }
-
-            Console.WriteLine(mainPlayer.Size);
-            fillDeck();
+            attackOrDefend((PictureBox)sender);
         }
-        private void attackOrDefend(PictureBox card, int i)
-        {
-            
-            Card playCard = mainPlayer.Get(i);
-            if (fightMode == "Attack")
-            {
-                if (CanAttack(playCard)) 
-                { 
-                    attack(card);
-                    // adds the card to the decks
-                    boardDeck.AddCard(mainPlayer.Play(i));
-                }
-            }
-            else
-            {
-                if (CanDefend(playCard))
-                {
-                    defend(card);
 
-                    boardDeck.AddCard(mainPlayer.Play(i));
-                }
-            }
-            card.Image = null;
-        }
         private void attack(PictureBox card)
         {
-            // adds the image
             PictureBox pb = null;
             foreach (PictureBox pictureBox in attackingSlots)
             {
@@ -254,14 +200,15 @@ namespace Durak
                 else
                 {
                     continue;
+
                 }
+
             }
+            
             pb.Image = card.Image;
             card.Image = null;
 
-            
         }
-
         private void defend(PictureBox card)
         {
             PictureBox pb = null;
@@ -275,29 +222,16 @@ namespace Durak
                 else
                 {
                     continue;
+
                 }
+
             }
             pb.Visible = true;
             pb.Image = card.Image;
             card.Image = null;
-        }
 
-        private bool CanAttack(Card attackCard)
-        {
-            return (boardDeck.Size == 0 || boardDeck.ContainsNumber(attackCard.Number)) && true; // change true to canAttack bool variable
-        }
 
-        private bool CanDefend(Card card)
-        {
-            bool canDefend = false;
-            Card attackingCard = boardDeck.Get(boardDeck.Size - 1);
 
-            if ((card.Suit == attackingCard.Suit || card.Suit == Card.EmpSuit) && card.Power > attackingCard.Power)
-            {
-                canDefend = true; 
-            }
-
-            return canDefend && true; // change true to canDefend2 bool variable
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -305,16 +239,38 @@ namespace Durak
             if (this.fightMode == "Attack")
             {
                 this.fightMode = "Defend";
+
+
             }
             else if (this.fightMode == "Defend")
             {
                 this.fightMode = "Attack";
+
+
             }
             Console.WriteLine(fightMode);
         }
 
-        
+        private void attackOrDefend(PictureBox card)
+        {
+            if (fightMode == "Attack")
+            {
 
+                attack(card);
+
+
+            }
+            else
+            {
+                defend(card);
+
+
+            }
+            
+            
+            
+
+        }
         private void pickUpLastEmpoweredCard()
         {
             foreach (PictureBox pictureBox in playersCards)
@@ -325,41 +281,30 @@ namespace Durak
                     empowerCard.Visible = false;
                     empowerCard.Enabled = false;
                     break;
+
+
                 }
                 else
                 {
                     continue;
+
                 }
+
             }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ClearBoard();
-        }
-
-        private void ClearBoard()
-        {
             attackingSlots.ForEach((picturebox) => picturebox.Image = null);
-            defendingSlots.ForEach((picturebox) =>
-            {
-                picturebox.Image = null;
-                picturebox.Visible = false;
-            });
-
-            boardDeck = new Deck(false);
+            defendingSlots.ForEach((picturebox) => picturebox.Image = null);
         }
 
 
         private void empowerCard_Click(object sender, EventArgs e)
         {
 
-            //pickUpLastEmpoweredCard();
-            if (turnEnded)
-            {
-                drawDecks();
-                fillDeck();
-            }
+            pickUpLastEmpoweredCard();
 
         }
 
@@ -378,73 +323,19 @@ namespace Durak
             currentDefender = allDecks[(mainAttackerIndex + 1) % playerCount];
         }
 
-        //private void mainAttackerRule()
-        //{
-        //    if (fightMode == "Attack" && cardAttack1 == null)
-        //    {
-        //        allowCardPlay = true;
-        //    }
-        //}
-
-        private void endTurnButton_Click(object sender, EventArgs e)
+        private void firstAttack()
         {
-            // deal with bots attack and user defend and user attack
+            fightMode = "Attack";
 
 
-            // everyone played and ended their turn
 
-            if (boardDeck.Size % 2 == 1)
-            {
-                currentDefender.AddDeck(boardDeck);
-                mainAttackerIndex = (mainAttackerIndex + 2) % playerCount;
-            }
-            else
-            {
-                mainAttackerIndex = (mainAttackerIndex + 1) % playerCount;
-            }
-
-            setDefender();
-
-            ClearBoard();
-            turn++;
-            turnEnded = true;
         }
 
-        private void sortingComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void playCard(Image cardPlayed) 
         {
-            Sort();
-            fillDeck();
-        }
-
-        private void Sort()
-        {
-            switch (sortingComboBox.SelectedIndex)
-            {
-                case 0:
-                    mainPlayer.SortByPower();
-                    break;
-                case 1:
-                    mainPlayer.SortBySuit();
-                    break;
-                case 2:
-                    mainPlayer.SortByNumber();
-                    break;
-            }
-        }
-
-        private void waitngLabelTimer_Tick(object sender, EventArgs e)
-        {
-            String waitingText = waitingLabel.Text;
-            int dots = waitingText.Count(dot => dot == '.');
-            String str = waitingText.Substring(0, waitingText.Length-dots);
-
-            dots = (dots + 1) % 4;
-            for (int i = 0; i < dots; i++)
-            {
-                str += ".";
-            }
             
-            waitingLabel.Text = str;
+
+
         }
     }
 }

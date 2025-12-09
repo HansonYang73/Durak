@@ -25,8 +25,8 @@ namespace Durak
         private void button1_Click(object sender, EventArgs e)
         {
             Deck deck = new Deck();
-            Deck p1 = new Deck(deck);
-            Deck p2 = new Deck(deck);
+            Deck p1 = new Deck(false);
+            Deck p2 = new Deck(false);
 
             Console.WriteLine("Deck:");
             deck.PrintDeck();
@@ -47,17 +47,14 @@ namespace Durak
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            players.Add(op1ComboBox.Text);
             playerCount++;
 
             if (!op2ComboBox.Text.Equals("None"))
             {
-                players.Add(op2ComboBox.Text);
                 playerCount++;
             }
             if (!op3ComboBox.Text.Equals("None"))
             {
-                players.Add(op3ComboBox.Text);
                 playerCount++;
             }
 
