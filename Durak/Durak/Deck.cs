@@ -11,6 +11,8 @@ namespace Durak
     {
         private List<Card> deck;
         public int Size { get; set; }
+        public bool isBot;
+        public Bot bot;
 
         public Deck() 
         {
@@ -50,6 +52,8 @@ namespace Durak
             deck = new List<Card>();
             Size = 0;
 
+            this.isBot = isBot;
+            
             //for (int i = 0; i < 6; i++)
             //{
             //    AddCard(mainDeck.Draw());

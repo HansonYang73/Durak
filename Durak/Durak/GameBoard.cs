@@ -59,12 +59,10 @@ namespace Durak
 
         private string fightMode;
 
-        private List<Deck> allDecks;
         private Deck boardDeck;
         private Deck mainPlayer;
-        private Deck currentPlayer; // not sure what this is
+        private Deck currentAttacker;
         private Deck currentDefender;
-        private int mainAttackerIndex;
 
         private int attacksThisRound;
         private const int maxAttacksPerTurn = 6;
@@ -78,21 +76,17 @@ namespace Durak
 
             turnEnded = false;
 
-            mainAttackerIndex = 0;
 
             this.playerCount = playerCount;
 
             this.deck = new Deck();
             boardDeck = new Deck(false);
-            this.allDecks = new List<Deck>();
 
-            allDecks.Add(new Deck(false));
-            for (int i = 0; i < playerCount-1; i++)
-            {
-                this.allDecks.Add(new Deck(true));
-            }
-            this.mainPlayer = allDecks[0];
+            
             this.fightMode = "Attack";
+            mainPlayer = new Deck(false);
+            currentAttacker = mainPlayer;
+            currentDefender = new Deck(true);
 
             empowerCard.Image = (Image)Properties.Resources.ResourceManager.GetObject(deck.Get(deck.Size - 1).CardImg);
             Console.WriteLine(deck.Get(deck.Size - 1).CardImg);
@@ -143,7 +137,7 @@ namespace Durak
 
         private void drawDecks()
         {
-            foreach (Deck deck in allDecks)
+            foreach (Deck deck in new List<Deck> { })
             {
                 while (deck.Size < 6 && this.deck.Size > 0)
                 {
@@ -375,10 +369,10 @@ namespace Durak
 
         private void setDefender()
         {
-            currentDefender = allDecks[(mainAttackerIndex + 1) % playerCount];
+            //currentDefender = allDecks[(currentAttackerIndex + 1) % playerCount];
         }
 
-        //private void mainAttackerRule()
+        //private void currentAttackerRule()
         //{
         //    if (fightMode == "Attack" && cardAttack1 == null)
         //    {
@@ -396,14 +390,13 @@ namespace Durak
             if (boardDeck.Size % 2 == 1)
             {
                 currentDefender.AddDeck(boardDeck);
-                mainAttackerIndex = (mainAttackerIndex + 2) % playerCount;
             }
             else
             {
-                mainAttackerIndex = (mainAttackerIndex + 1) % playerCount;
+                Deck temp = currentAttacker;
+                currentAttacker = currentDefender;
+                currentDefender = temp;
             }
-
-            setDefender();
 
             ClearBoard();
             turn++;
@@ -445,6 +438,11 @@ namespace Durak
             }
             
             waitingLabel.Text = str;
+        }
+
+        private async void StartTurn()
+        {
+
         }
     }
 }

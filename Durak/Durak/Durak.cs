@@ -13,13 +13,10 @@ namespace Durak
     public partial class Durak : Form
     {
         private int playerCount;
-        private List<String> players;
         public Durak()
         {
             InitializeComponent();
-            playerCount = 1;
-            players = new List<String>();
-            players.Add("Player");
+            playerCount = 2;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,22 +38,10 @@ namespace Durak
         private void durakForm_Load(object sender, EventArgs e)
         {
             op1ComboBox.SelectedIndex = 0;
-            op2ComboBox.SelectedIndex = 0;
-            op3ComboBox.SelectedIndex = 0;
         }
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            playerCount++;
-
-            if (!op2ComboBox.Text.Equals("None"))
-            {
-                playerCount++;
-            }
-            if (!op3ComboBox.Text.Equals("None"))
-            {
-                playerCount++;
-            }
 
             Hide();
             new GameBoard(playerCount).Show();
