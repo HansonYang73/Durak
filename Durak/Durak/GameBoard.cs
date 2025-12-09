@@ -137,7 +137,7 @@ namespace Durak
 
         private void drawDecks()
         {
-            foreach (Deck deck in new List<Deck> { })
+            foreach (Deck deck in new List<Deck> {currentAttacker, currentDefender })
             {
                 while (deck.Size < 6 && this.deck.Size > 0)
                 {
