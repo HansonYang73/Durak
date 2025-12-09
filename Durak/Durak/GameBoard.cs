@@ -157,63 +157,9 @@ namespace Durak
             Console.WriteLine(deck.Size);
         }
 
-        private void card1_Click(object sender, EventArgs e)
+        private void card_Click(object sender, EventArgs e)
         {
-            attackOrDefend(card1);
-
-
-
-
-
-        }
-
-        private void card2_Click(object sender, EventArgs e)
-        {
-            attackOrDefend(card2);
-
-
-
-
-
-        }
-
-        private void card3_Click(object sender, EventArgs e)
-        {
-
-            attackOrDefend(card3);
-
-
-
-
-
-        }
-
-        private void card4_Click(object sender, EventArgs e)
-        {
-
-            attackOrDefend(card4);
-
-
-
-
-
-        }
-
-        private void card5_Click(object sender, EventArgs e)
-        {
-            attackOrDefend(card5);
-
-
-
-
-        }
-
-        private void card6_Click(object sender, EventArgs e)
-        {
-            attackOrDefend(card6);
-
-
-
+            attackOrDefend((PictureBox)sender);
         }
 
         private void attack(PictureBox card)

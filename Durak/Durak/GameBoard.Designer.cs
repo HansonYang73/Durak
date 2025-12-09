@@ -95,7 +95,7 @@
             this.card1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.card1.TabIndex = 7;
             this.card1.TabStop = false;
-            this.card1.Click += new System.EventHandler(this.card1_Click);
+            this.card1.Click += new System.EventHandler(this.card_Click);
             // 
             // card2
             // 
@@ -105,7 +105,7 @@
             this.card2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.card2.TabIndex = 9;
             this.card2.TabStop = false;
-            this.card2.Click += new System.EventHandler(this.card2_Click);
+            this.card2.Click += new System.EventHandler(this.card_Click);
             // 
             // card3
             // 
@@ -115,7 +115,7 @@
             this.card3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.card3.TabIndex = 10;
             this.card3.TabStop = false;
-            this.card3.Click += new System.EventHandler(this.card3_Click);
+            this.card3.Click += new System.EventHandler(this.card_Click);
             // 
             // card4
             // 
@@ -125,7 +125,7 @@
             this.card4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.card4.TabIndex = 11;
             this.card4.TabStop = false;
-            this.card4.Click += new System.EventHandler(this.card4_Click);
+            this.card4.Click += new System.EventHandler(this.card_Click);
             // 
             // card5
             // 
@@ -135,7 +135,7 @@
             this.card5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.card5.TabIndex = 12;
             this.card5.TabStop = false;
-            this.card5.Click += new System.EventHandler(this.card5_Click);
+            this.card5.Click += new System.EventHandler(this.card_Click);
             // 
             // card6
             // 
@@ -145,7 +145,7 @@
             this.card6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.card6.TabIndex = 13;
             this.card6.TabStop = false;
-            this.card6.Click += new System.EventHandler(this.card6_Click);
+            this.card6.Click += new System.EventHandler(this.card_Click);
             // 
             // empowerCard
             // 

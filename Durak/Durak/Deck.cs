@@ -40,10 +40,9 @@ namespace Durak
             return deck[index];
         }
 
-        public Card GetDeck(int index)
+        public List<Card> GetDeck()
         {
-            //return this.deck;
-            return null;
+            return deck;
         }
 
         public Deck(Deck mainDeck) //Hand

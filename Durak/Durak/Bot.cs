@@ -29,7 +29,13 @@ namespace Durak
 
         private bool CanAttack()
         {
-            BoardDeck.D
+            bool canAttack = false;
+            foreach (Card card in MainDeck.GetDeck())
+            {
+                //if ()
+            }
+
+            return canAttack;
         }
     }
 }
