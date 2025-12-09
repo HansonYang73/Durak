@@ -10,23 +10,26 @@ namespace Durak
     {
         private Deck MainDeck { get; set; }
         private Deck BoardDeck { get; set; }
+
+        private Deck attackingDeck;
         public Bot(Deck deck, Deck boardDeck)
         {
             MainDeck = deck;
             BoardDeck = boardDeck;
         }
 
-        //public Card Attack()
-        //{
-        //    if (CanAttack())
-        //    {
+        public Card Attack(bool firstAttack) // return null for end turn
+        {
+            if (firstAttack || CanAttack())
+            {
 
-        //    }
-        //}
+            }
+            return null;
+        }
 
-        //private bool CanAttack()
-        //{
-
-        //}
+        private bool CanAttack()
+        {
+            BoardDeck.D
+        }
     }
 }

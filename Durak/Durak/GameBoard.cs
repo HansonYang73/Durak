@@ -125,20 +125,36 @@ namespace Durak
 
         private void fillDeck()
         {
+
             foreach (PictureBox pictureBox in playersCards)
             {
                 if (pictureBox.Image == null)
                 {
-                    pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(deck.Draw().CardImg);
 
+                    if (deck.Size == 0)
+                    {
+                        mainDeck.Visible = false;
+                        mainDeck.Enabled = false;
+                        empowerCard.Visible = false;
+                        empowerCard.Enabled = false;
+                        break;
+                    }
+
+                    else
+                    {
+                        pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(deck.Draw().CardImg);
+
+
+                    }
                 }
                 else
                 {
                     continue;
                 }
+
             }
 
-
+            Console.WriteLine(deck.Size);
         }
 
         private void card1_Click(object sender, EventArgs e)
@@ -243,7 +259,7 @@ namespace Durak
             pb.Visible = true;
             pb.Image = card.Image;
 
-               
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -281,6 +297,28 @@ namespace Durak
             card.Image = null;
 
         }
+        private void pickUpLastEmpoweredCard()
+        {
+            foreach (PictureBox pictureBox in playersCards)
+            {
+                if (pictureBox.Image == null)
+                {
+                    pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(deck.Draw().CardImg);
+                    empowerCard.Visible = false;
+                    empowerCard.Enabled = false;
+                    break;
+
+
+                }
+                else
+                {
+                    continue;
+
+                }
+
+            }
+
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -288,16 +326,35 @@ namespace Durak
             defendingSlots.ForEach((picturebox) => picturebox.Image = null);
         }
 
+
+        private void empowerCard_Click(object sender, EventArgs e)
+        {
+
+            pickUpLastEmpoweredCard();
+
+        }
+
+        private void empowerCard_MouseEnter(object sender, EventArgs e)
+        {
+            empowerCard.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void empowerCard_MouseLeave(object sender, EventArgs e)
+        {
+            empowerCard.BorderStyle = BorderStyle.None;
+        }
+
         private void setDefender()
         {
-             currentDefender = allDecks[(mainAttackerIndex + 1) % playerCount];
+            currentDefender = allDecks[(mainAttackerIndex + 1) % playerCount];
         }
 
         private void firstAttack()
         {
             fightMode = "Attack";
 
-            
+
+
         }
     }
 }
