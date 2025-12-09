@@ -22,3 +22,15 @@ C:\Users\shonc\Downloads\Durak-main\Durak-main\Durak\Durak\obj\Debug\Durak.cspro
 C:\Users\shonc\Downloads\Durak-main\Durak-main\Durak\Durak\obj\Debug\Durak.csproj.CoreCompileInputs.cache
 C:\Users\shonc\Downloads\Durak-main\Durak-main\Durak\Durak\obj\Debug\Durak.exe
 C:\Users\shonc\Downloads\Durak-main\Durak-main\Durak\Durak\obj\Debug\Durak.pdb
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\bin\Debug\Durak.exe.config
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\bin\Debug\Durak.exe
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\bin\Debug\Durak.pdb
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\obj\Debug\Durak.csproj.AssemblyReference.cache
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\obj\Debug\Durak.exe.config
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\obj\Debug\Durak.Durak.resources
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\obj\Debug\Durak.GameBoard.resources
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\obj\Debug\Durak.Properties.Resources.resources
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\obj\Debug\Durak.csproj.GenerateResource.cache
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\obj\Debug\Durak.csproj.CoreCompileInputs.cache
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\obj\Debug\Durak.exe
+C:\Users\Oliver\Desktop\Durak\Durak\Durak\obj\Debug\Durak.pdb

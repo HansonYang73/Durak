@@ -62,7 +62,7 @@ namespace Durak
             }
 
             Hide();
-            new GameBoard().Show();
+            new GameBoard(playerCount).Show();
             // need to add more code
             // not sure about the variable players and playercount being in this form
         }

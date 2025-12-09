@@ -56,16 +56,24 @@ namespace Durak
         private Deck deck;
         private Deck mainPlayer;
         private string fightMode;
+        private List<Deck> allDecks;
+        private Deck currentPlayer;
+        private int playerCount;
+        private Deck currentDefender;
+        private int mainAttackerIndex;
 
-
-
-
-
-        public GameBoard()
+        public GameBoard(int playerCount)
         {
+            mainAttackerIndex = 0;
+            this.playerCount = playerCount;
             InitializeComponent();
+            this.allDecks = new List<Deck>();
             this.deck = new Deck();
-            this.mainPlayer = new Deck(this.deck);
+            for (int i = 0; i < playerCount; i++)
+            {
+                this.allDecks.Add(new Deck(this.deck));
+            }
+            this.mainPlayer = allDecks[0];
             this.fightMode = "Attack";
             empowerCard.Image = (Image)Properties.Resources.ResourceManager.GetObject(deck.Get(deck.Size - 1).CardImg);
             Console.WriteLine(deck.Get(deck.Size - 1).CardImg);
@@ -235,7 +243,7 @@ namespace Durak
             pb.Visible = true;
             pb.Image = card.Image;
 
-
+               
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -278,6 +286,18 @@ namespace Durak
         {
             attackingSlots.ForEach((picturebox) => picturebox.Image = null);
             defendingSlots.ForEach((picturebox) => picturebox.Image = null);
+        }
+
+        private void setDefender()
+        {
+             currentDefender = allDecks[(mainAttackerIndex + 1) % playerCount];
+        }
+
+        private void firstAttack()
+        {
+            fightMode = "Attack";
+
+            
         }
     }
 }
