@@ -114,5 +114,26 @@ namespace Durak
             });
             return contains;
         }
+
+        public void SortByPower()
+        {
+            deck = deck.OrderBy(card => card.Power)
+                       .ThenBy(card => (int)card.Suit)
+                       .ToList();
+        }
+
+        public void SortBySuit()
+        {
+            deck = deck.OrderBy(card => (int)card.Suit)
+                       .ThenBy(card => card.Number)
+                       .ToList();
+        }
+
+        public void SortByNumber()
+        {
+            deck = deck.OrderBy(card => card.Number)
+                       .ThenBy(card => (int)card.Suit)
+                       .ToList();
+        }
     }
 }
