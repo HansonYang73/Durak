@@ -176,7 +176,7 @@
             this.empowerCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.empowerCard.TabIndex = 14;
             this.empowerCard.TabStop = false;
-            this.empowerCard.Click += new System.EventHandler(this.empowerCard_Click);
+            this.empowerCard.Click += new System.EventHandler(this.mainDeck_Click);
             // 
             // historyTextBox
             // 
