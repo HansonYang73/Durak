@@ -199,8 +199,18 @@ namespace Durak
             endedTurn = false;
             botEndedTurn = false;
 
-            numberOfCardsLabel.Text = "Cards: " + deck.Size.ToString();
-
+            if (Durak.getCulture() == "en-US")
+            {
+                numberOfCardsLabel.Text = "Cards: " + deck.Size.ToString();
+            }
+            else if (Durak.getCulture() == "fr-FR")
+            {
+                numberOfCardsLabel.Text = "Cartes: " + deck.Size.ToString();
+            }
+            else if (Durak.getCulture() == "es-ES")
+            {
+                numberOfCardsLabel.Text = "Cardes: " + deck.Size.ToString();
+            }
             StartTurn();
         }
 
@@ -225,7 +235,18 @@ namespace Durak
             if (botPlayer.Size > 6)
             {
                 int extraCards = botPlayer.Size - 6;
-                extraBotCards.Text = $"+{extraCards} Cards";
+                if (Durak.getCulture() == "en-US")
+                {
+                    extraBotCards.Text = $"+{extraCards} Cards";
+                }
+                else if (Durak.getCulture() == "fr-FR")
+                {
+                    extraBotCards.Text = $"+{extraCards} Cartes";
+                }
+                else if (Durak.getCulture() == "es-ES")
+                {
+                    extraBotCards.Text = $"+{extraCards} Cardes";
+                }
             }
             else
             {
@@ -317,7 +338,18 @@ namespace Durak
                     attack(card);
                     // adds the card to the decks
                     boardDeck.AddCard(mainPlayer.Play(i));
-                    historyTextBox.AppendText($"You have attacked with {playCard.ToString()}" + Environment.NewLine);
+                    if (Durak.getCulture() == "en-US")
+                    {
+                        historyTextBox.AppendText($"You have attacked with: {playCard.ToString()}" + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "fr-FR")
+                    {
+                        historyTextBox.AppendText($"Vous avez attaqué avec: {playCard.ToString()}" + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "es-ES")
+                    {
+                        historyTextBox.AppendText($"Has atacado con: {playCard.ToString()}" + Environment.NewLine);
+                    }
 
                     played = true;
                 }
@@ -329,7 +361,18 @@ namespace Durak
                     defend(card);
 
                     boardDeck.AddCard(mainPlayer.Play(i));
-                    historyTextBox.AppendText($"You have defended with {playCard.ToString()}" + Environment.NewLine);
+                    if (Durak.getCulture() == "en-US")
+                    {
+                        historyTextBox.AppendText($"You have defended with: {playCard.ToString()}" + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "fr-FR")
+                    {
+                        historyTextBox.AppendText($"Vous avez défendu avec: {playCard.ToString()}" + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "es-ES")
+                    {
+                        historyTextBox.AppendText($"Has defendido con: {playCard.ToString()}" + Environment.NewLine);
+                    }
 
                     played = true;
                 }
@@ -437,7 +480,19 @@ namespace Durak
             if (mainPlayer.Size == 0)
             {
                 winLabel.ForeColor = Color.LimeGreen;
-                winLabel.Text = "You Have Won!";
+                if (Durak.getCulture() == "en-US")
+                {
+                    winLabel.Text = "You Have Won!";
+                }
+                else if (Durak.getCulture() == "fr-FR")
+                {
+                    winLabel.Text = "Vous Avez Gagné!";
+                }
+                else if (Durak.getCulture() == "es-ES")
+                {
+                    winLabel.Text = "Vous Avez Gagné!";
+                }
+                winLabel.Text = "Has Ganado!";
             }
             else if (botPlayer.Size == 0)
             {
@@ -470,7 +525,18 @@ namespace Durak
         {
             if (!endedTurn && boardDeck.Size > 0)
             {
-                historyTextBox.AppendText("You have ended your turn" + Environment.NewLine);
+                if (Durak.getCulture() == "en-US")
+                {
+                    historyTextBox.AppendText("You have ended your turn" + Environment.NewLine);
+                }
+                else if (Durak.getCulture() == "fr-FR")
+                {
+                    historyTextBox.AppendText("Vous avez terminé votre tour" + Environment.NewLine);
+                }
+                else if (Durak.getCulture() == "es-ES")
+                {
+                    historyTextBox.AppendText("Has terminado tu turno." + Environment.NewLine);
+                }
                 endedTurn = true;
             }
             // deal with bots attack and user defend and user attack
@@ -559,7 +625,18 @@ namespace Durak
 
                 if (deck.Size > 0 && mainPlayer.Size < 6) 
                 {
-                    historyTextBox.AppendText(Environment.NewLine + "Click the deck to draw the cards!" + Environment.NewLine + Environment.NewLine);
+                    if (Durak.getCulture() == "en-US")
+                    {
+                        historyTextBox.AppendText(Environment.NewLine + "Click the deck to draw the cards!" + Environment.NewLine + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "fr-FR")
+                    {
+                        historyTextBox.AppendText(Environment.NewLine + "Cliquez sur le paquet pour tirer les cartes!" + Environment.NewLine + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "es-ES")
+                    {
+                        historyTextBox.AppendText("¡Haz clic en la baraja para robar las cartas!" + Environment.NewLine);
+                    }
                 }
             }
         }
@@ -653,7 +730,18 @@ namespace Durak
                 Card attackCard = currentAttacker.bot.Attack(boardDeck, deck);
                 if (attackCard != null && boardDeck.Size % 2 == 0)
                 {
-                    historyTextBox.AppendText("Bot has attacked with a " + attackCard.ToString() + Environment.NewLine);
+                    if (Durak.getCulture() == "en-US")
+                    {
+                        historyTextBox.AppendText("Bot has attacked with: " + attackCard.ToString() + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "fr-FR")
+                    {
+                        historyTextBox.AppendText("Le robot a attaqué avec: " + attackCard.ToString() + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "es-ES")
+                    {
+                        historyTextBox.AppendText("El bot ha atacado con: " + attackCard.ToString() + Environment.NewLine);
+                    }
 
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(attackCard.CardImg);
@@ -668,7 +756,18 @@ namespace Durak
                 else
                 {
                     botEndedTurn = true;
-                    historyTextBox.AppendText("Bot has ended their turn" + Environment.NewLine);
+                    if (Durak.getCulture() == "en-US")
+                    {
+                        historyTextBox.AppendText("Bot has ended their turn" + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "fr-FR")
+                    {
+                        historyTextBox.AppendText("Le robot a terminé son tour" + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "es-ES")
+                    {
+                        historyTextBox.AppendText("El bot ha terminado su turno" + Environment.NewLine);
+                    }
 
                 }
 
@@ -698,7 +797,18 @@ namespace Durak
 
                 if (defendCard != null)
                 {
-                    historyTextBox.AppendText("Bot has defended with a " + defendCard.ToString() + Environment.NewLine);
+                    if (Durak.getCulture() == "en-US")
+                    {
+                        historyTextBox.AppendText("Bot has defended with: " + defendCard.ToString() + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "fr-FR")
+                    {
+                        historyTextBox.AppendText("Le robot a défendu avec: " + defendCard.ToString() + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "es-ES")
+                    {
+                        historyTextBox.AppendText("Bot ha defendido con: " + defendCard.ToString() + Environment.NewLine);
+                    }
 
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(defendCard.CardImg);
@@ -720,7 +830,18 @@ namespace Durak
                     {
                         endedTurn = true;
                     }
-                    historyTextBox.AppendText("Bot has ended their turn" + Environment.NewLine);
+                    if (Durak.getCulture() == "en-US")
+                    {
+                        historyTextBox.AppendText("Bot has ended their turn" + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "fr-FR")
+                    {
+                        historyTextBox.AppendText("Le robot a terminé son tour" + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "es-ES")
+                    {
+                        historyTextBox.AppendText("El bot ha terminado su turno" + Environment.NewLine);
+                    }
                 }
 
                 played = false;

@@ -127,9 +127,6 @@
   <data name="card6.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;card6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;extraBotCards.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
@@ -146,9 +143,6 @@
     <value>$this</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="card5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 163</value>
-  </data>
   <data name="botCard3.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 163</value>
   </data>
@@ -173,6 +167,9 @@
   <data name="cardAttack2.Location" type="System.Drawing.Point, System.Drawing">
     <value>559, 277</value>
   </data>
+  <data name="card3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>668, 568</value>
+  </data>
   <data name="&gt;&gt;numberOfCardsLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -188,6 +185,9 @@
   <data name="&gt;&gt;cardDefend3.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
+  <data name="&gt;&gt;botCard6.Name" xml:space="preserve">
+    <value>botCard6</value>
+  </data>
   <data name="numberOfCardsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 22</value>
   </data>
@@ -202,6 +202,9 @@
   </data>
   <data name="card4.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
+  </data>
+  <data name="extraBotCards.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cardDefend2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
@@ -228,14 +231,17 @@
   <data name="&gt;&gt;sortingComboBox.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <data name="card5.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
   <data name="&gt;&gt;card5.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
+  <data name="cardDefend2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>559, 334</value>
+  </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
-  </data>
-  <data name="&gt;&gt;botCard3.Name" xml:space="preserve">
-    <value>botCard3</value>
   </data>
   <data name="cardDefend1.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -267,11 +273,11 @@
   <data name="cardDefend6.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="botCard2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>559, 13</value>
-  </data>
   <data name="&gt;&gt;botCard4.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainDeck.Name" xml:space="preserve">
+    <value>mainDeck</value>
   </data>
   <data name="cardDefend5.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -288,26 +294,29 @@
   <data name="cardDefend3.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="winLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>740, 109</value>
+  <data name="botCard5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
   </data>
-  <data name="&gt;&gt;card1.Type" xml:space="preserve">
+  <data name="&gt;&gt;empowerCard.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="cardDefend6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="botCard3.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
   <data name="&gt;&gt;mainMenuButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;extraBotCards.Name" xml:space="preserve">
+    <value>extraBotCards</value>
   </data>
   <data name="historyTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>351, 718</value>
   </data>
   <data name="&gt;&gt;cardAttack6.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cardAttack3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;historyTextBox.Name" xml:space="preserve">
     <value>historyTextBox</value>
@@ -327,11 +336,11 @@
   <data name="extraBotCards.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 58</value>
   </data>
-  <data name="&gt;&gt;botCard2.Name" xml:space="preserve">
-    <value>botCard2</value>
+  <data name="cardDefend4.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
-  <data name="&gt;&gt;botCard6.Name" xml:space="preserve">
-    <value>botCard6</value>
+  <data name="botCard3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="card4.Location" type="System.Drawing.Point, System.Drawing">
     <value>777, 568</value>
@@ -408,9 +417,6 @@
   <data name="&gt;&gt;numberOfCardsLabel.Name" xml:space="preserve">
     <value>numberOfCardsLabel</value>
   </data>
-  <data name="&gt;&gt;empowerCard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="goBack.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -419,6 +425,9 @@
   </data>
   <data name="&gt;&gt;cardDefend1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numberOfCardsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
   <data name="&gt;&gt;botCard5.Name" xml:space="preserve">
     <value>botCard5</value>
@@ -447,20 +456,14 @@
   <data name="historyTextBox.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="historyTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
+  <data name="&gt;&gt;card4.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="botCard3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;cardDefend1.ZOrder" xml:space="preserve">
-    <value>20</value>
+  <data name="sortingComboBox.Items1" xml:space="preserve">
+    <value>Suit</value>
   </data>
   <data name="cardDefend2.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
-  </data>
-  <data name="&gt;&gt;cardDefend2.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;card2.Name" xml:space="preserve">
     <value>card2</value>
@@ -472,12 +475,6 @@
     <value>False</value>
   </data>
   <data name="botCard1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>GameBoard</value>
-  </data>
-  <data name="botCard4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
   <data name="cardDefend2.Visible" type="System.Boolean, mscorlib">
@@ -492,8 +489,8 @@
   <data name="&gt;&gt;card1.Name" xml:space="preserve">
     <value>card1</value>
   </data>
-  <data name="&gt;&gt;extraBotCards.Name" xml:space="preserve">
-    <value>extraBotCards</value>
+  <data name="&gt;&gt;cardAttack1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="goBack.Location" type="System.Drawing.Point, System.Drawing">
     <value>369, 708</value>
@@ -513,9 +510,6 @@
   <data name="&gt;&gt;botCard3.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;card1.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
   <data name="cardAttack6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -534,14 +528,14 @@
   <data name="nextCard.Text" xml:space="preserve">
     <value>Next</value>
   </data>
-  <data name="&gt;&gt;cardAttack2.ZOrder" xml:space="preserve">
-    <value>31</value>
+  <data name="cardAttack4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="card2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;cardAttack3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;cardDefend2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="cardAttack5.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -573,8 +567,8 @@
   <data name="&gt;&gt;cardAttack2.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;card4.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="historyTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
   </data>
   <data name="cardDefend3.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 163</value>
@@ -582,20 +576,17 @@
   <data name="&gt;&gt;extraBotCards.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;botCard6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cardAttack1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;card1.ZOrder" xml:space="preserve">
+    <value>27</value>
   </data>
   <data name="&gt;&gt;endTurnButton.Name" xml:space="preserve">
     <value>endTurnButton</value>
   </data>
+  <data name="&gt;&gt;cardAttack1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="card2.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 163</value>
-  </data>
-  <data name="sortingComboBox.Items1" xml:space="preserve">
-    <value>Suit</value>
   </data>
   <data name="&gt;&gt;nextCard.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -636,9 +627,6 @@
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;mainDeck.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
   <data name="&gt;&gt;cardDefend5.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
@@ -669,8 +657,8 @@
   <data name="goBack.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="botCard1.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+  <data name="botCard4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="cardAttack1.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 163</value>
@@ -683,9 +671,6 @@
   </data>
   <data name="cardDefend2.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 163</value>
-  </data>
-  <data name="&gt;&gt;cardDefend3.Name" xml:space="preserve">
-    <value>cardDefend3</value>
   </data>
   <data name="&gt;&gt;cardDefend4.Name" xml:space="preserve">
     <value>cardDefend4</value>
@@ -708,6 +693,9 @@
   <data name="cardAttack3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
+  <data name="&gt;&gt;cardDefend3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="card5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -717,8 +705,8 @@
   <data name="cardAttack1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="extraBotCards.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
+  <data name="&gt;&gt;botCard3.Name" xml:space="preserve">
+    <value>botCard3</value>
   </data>
   <data name="card1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -732,8 +720,8 @@
   <data name="&gt;&gt;endTurnButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="winLabel.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="botCard3.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -765,6 +753,9 @@
   <data name="cardAttack1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
+  <data name="&gt;&gt;card1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="cardAttack4.Location" type="System.Drawing.Point, System.Drawing">
     <value>777, 277</value>
   </data>
@@ -773,9 +764,6 @@
   </data>
   <data name="&gt;&gt;endTurnButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cardDefend4.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
   </data>
   <data name="cardDefend4.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 163</value>
@@ -804,6 +792,9 @@
   <data name="&gt;&gt;botCard1.Name" xml:space="preserve">
     <value>botCard1</value>
   </data>
+  <data name="&gt;&gt;cardAttack2.Name" xml:space="preserve">
+    <value>cardAttack2</value>
+  </data>
   <data name="&gt;&gt;card6.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
@@ -812,6 +803,9 @@
   </data>
   <data name="cardAttack3.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
+  </data>
+  <data name="&gt;&gt;cardAttack2.ZOrder" xml:space="preserve">
+    <value>31</value>
   </data>
   <data name="extraBotCards.Location" type="System.Drawing.Point, System.Drawing">
     <value>1104, 16</value>
@@ -843,8 +837,8 @@
   <data name="&gt;&gt;empowerCard.ZOrder" xml:space="preserve">
     <value>29</value>
   </data>
-  <data name="botCard5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 163</value>
+  <data name="&gt;&gt;botCard2.Name" xml:space="preserve">
+    <value>botCard2</value>
   </data>
   <data name="botCard6.Location" type="System.Drawing.Point, System.Drawing">
     <value>995, 13</value>
@@ -852,8 +846,8 @@
   <data name="&gt;&gt;sortingComboBox.Name" xml:space="preserve">
     <value>sortingComboBox</value>
   </data>
-  <data name="cardDefend4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 334</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>GameBoard</value>
   </data>
   <data name="card2.Location" type="System.Drawing.Point, System.Drawing">
     <value>559, 568</value>
@@ -864,8 +858,8 @@
   <data name="&gt;&gt;cardDefend4.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cardAttack1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="botCard2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>559, 13</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -894,8 +888,11 @@
   <data name="cardDefend5.Location" type="System.Drawing.Point, System.Drawing">
     <value>886, 334</value>
   </data>
-  <data name="card3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>668, 568</value>
+  <data name="cardDefend4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>777, 334</value>
+  </data>
+  <data name="&gt;&gt;cardDefend3.Name" xml:space="preserve">
+    <value>cardDefend3</value>
   </data>
   <data name="&gt;&gt;cardAttack6.ZOrder" xml:space="preserve">
     <value>35</value>
@@ -906,8 +903,8 @@
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
-  <data name="cardAttack4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="winLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 109</value>
   </data>
   <data name="&gt;&gt;cardDefend6.Parent" xml:space="preserve">
     <value>$this</value>
@@ -927,14 +924,14 @@
   <data name="&gt;&gt;cardAttack5.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cardDefend3.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="botCard1.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
   </data>
   <data name="cardAttack5.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 163</value>
   </data>
-  <data name="card5.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="&gt;&gt;mainDeck.ZOrder" xml:space="preserve">
+    <value>28</value>
   </data>
   <data name="cardDefend6.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 163</value>
@@ -969,20 +966,20 @@
   <data name="cardDefend1.Location" type="System.Drawing.Point, System.Drawing">
     <value>450, 334</value>
   </data>
-  <data name="cardDefend2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>559, 334</value>
+  <data name="&gt;&gt;cardDefend1.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
   <data name="&gt;&gt;cardAttack4.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;mainDeck.Name" xml:space="preserve">
-    <value>mainDeck</value>
+  <data name="&gt;&gt;botCard6.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;mainDeck.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;cardAttack2.Name" xml:space="preserve">
-    <value>cardAttack2</value>
+  <data name="&gt;&gt;card6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="nextCard.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -1038,14 +1035,17 @@
   <data name="card1.Location" type="System.Drawing.Point, System.Drawing">
     <value>450, 568</value>
   </data>
+  <data name="sortingComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1123, 580</value>
+  </data>
   <data name="cardAttack3.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 163</value>
   </data>
   <data name="winLabel.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
-  <data name="sortingComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1123, 580</value>
+  <data name="card5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
   </data>
   <data name="&gt;&gt;botCard3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1059,8 +1059,8 @@
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="numberOfCardsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
+  <data name="winLabel.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;card4.Name" xml:space="preserve">
     <value>card4</value>
@@ -1069,6 +1069,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>fr</value>
+    <value>es</value>
   </metadata>
 </root>

@@ -473,7 +473,6 @@
         public System.Windows.Forms.PictureBox cardDefend4;
         public System.Windows.Forms.PictureBox cardDefend5;
         public System.Windows.Forms.PictureBox cardDefend6;
-        private System.Windows.Forms.Button endTurnButton;
         private System.Windows.Forms.ComboBox sortingComboBox;
         public System.Windows.Forms.PictureBox botCard1;
         public System.Windows.Forms.PictureBox botCard2;
@@ -488,5 +487,6 @@
         private System.Windows.Forms.Button mainMenuButton;
         private System.Windows.Forms.Label numberOfCardsLabel;
         private System.Windows.Forms.Label winLabel;
+        internal System.Windows.Forms.Button endTurnButton;
     }
 }

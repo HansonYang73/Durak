@@ -122,50 +122,48 @@ namespace Durak
                     suitStr = "Corazones";
             }
 
-            else if (suitStr == "Clubs")
+            else if (suitStr.Equals("Club"))
             {
                 if (culture == "en-US")
-                    suitStr = "Clubs";
+                    suitStr = "Club";
                 else if (culture == "fr-FR")
                     suitStr = "Trèfles";
                 else if (culture == "es-ES")
                     suitStr = "Tréboles";
             }
 
-            else if (suitStr == "Spades")
+            else if (suitStr.Equals("Spade"))
             {
                 if (culture == "en-US")
-                    suitStr = "Spades";
+                    suitStr = "Spade";
                 else if (culture == "fr-FR")
                     suitStr = "Piques";
                 else if (culture == "es-ES")
                     suitStr = "Espadas";
             }
 
-            else if (suitStr == "Diamonds")
+            else if (suitStr.Equals("Diamond"))
             {
                 if (culture == "en-US")
-                    suitStr = "Diamonds";
+                    suitStr = "Diamond";
                 else if (culture == "fr-FR")
                     suitStr = "Carreaux";
                 else if (culture == "es-ES")
                     suitStr = "Diamantes";
             }
 
-            if (Durak.getCulture() == "en-US")
+            if (culture == "en-US")
             {
                 return numStr + " of " + suitStr + "s";
             }
-            else if (Durak.getCulture() == "fr-FR")
+            else if (culture == "fr-FR")
             {
                 return numStr + " des " + suitStr;
             }
             else
             {
                 return numStr + " de " + suitStr;
-            }
-
-            
+            }          
         }
     }
 }
