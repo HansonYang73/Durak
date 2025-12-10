@@ -480,7 +480,7 @@ namespace Durak
 
                     StartTurn();
                 }
-                else
+                else if (deck.Size > 0) 
                 {
                     historyTextBox.AppendText(Environment.NewLine + "Click the deck to draw the cards!" + Environment.NewLine + Environment.NewLine);
                 }
