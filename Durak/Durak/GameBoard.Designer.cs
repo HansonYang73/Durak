@@ -245,8 +245,6 @@
             this.card6.Name = "card6";
             this.card6.TabStop = false;
             this.card6.Click += new System.EventHandler(this.card_Click);
-            this.card6.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
-            this.card6.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // card5
             // 
@@ -255,8 +253,6 @@
             this.card5.Name = "card5";
             this.card5.TabStop = false;
             this.card5.Click += new System.EventHandler(this.card_Click);
-            this.card5.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
-            this.card5.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // card4
             // 
@@ -265,8 +261,6 @@
             this.card4.Name = "card4";
             this.card4.TabStop = false;
             this.card4.Click += new System.EventHandler(this.card_Click);
-            this.card4.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
-            this.card4.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // card3
             // 
@@ -275,8 +269,6 @@
             this.card3.Name = "card3";
             this.card3.TabStop = false;
             this.card3.Click += new System.EventHandler(this.card_Click);
-            this.card3.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
-            this.card3.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // card2
             // 
@@ -285,8 +277,6 @@
             this.card2.Name = "card2";
             this.card2.TabStop = false;
             this.card2.Click += new System.EventHandler(this.card_Click);
-            this.card2.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
-            this.card2.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // card1
             // 
@@ -295,8 +285,6 @@
             this.card1.Name = "card1";
             this.card1.TabStop = false;
             this.card1.Click += new System.EventHandler(this.card_Click);
-            this.card1.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
-            this.card1.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // mainDeck
             // 
@@ -316,8 +304,6 @@
             this.empowerCard.Name = "empowerCard";
             this.empowerCard.TabStop = false;
             this.empowerCard.Click += new System.EventHandler(this.mainDeck_Click);
-            this.empowerCard.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
-            this.empowerCard.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // cardAttack1
             // 
