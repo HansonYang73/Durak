@@ -144,12 +144,12 @@ namespace Durak
 
         private void mainDeck_MouseEnter(object sender, EventArgs e)
         {
-            mainDeck.BorderStyle = BorderStyle.FixedSingle;
+            ((PictureBox)sender).BorderStyle = BorderStyle.FixedSingle;
         }
 
         private void mainDeck_MouseLeave(object sender, EventArgs e)
         {
-            mainDeck.BorderStyle = BorderStyle.None;
+            ((PictureBox)sender).BorderStyle = BorderStyle.None;
 
         }
 
@@ -173,6 +173,8 @@ namespace Durak
 
             endedTurn = false;
             botEndedTurn = false;
+
+            numberOfCardsLabel.Text = "Cards: " + deck.Size.ToString();
 
             StartTurn();
         }
@@ -405,27 +407,25 @@ namespace Durak
 
         private void endGame()
         {
+            winLabel.Visible = true;
+            winLabel.Enabled = true;
             if (mainPlayer.Size == 0)
             {
-                historyTextBox.AppendText("You Have Won!");
-
-
+                winLabel.ForeColor = Color.LimeGreen;
+                winLabel.Text = "You Have Won!";
             }
             else if (botPlayer.Size == 0)
             {
-                historyTextBox.AppendText("You Have Lost!");
-
+                winLabel.ForeColor = Color.Red;
+                winLabel.Text = "Durak!";
             }
-            else
-            {
-                historyTextBox.AppendText("It's a Draw!");
 
-            }
             foreach (PictureBox picturebox in playersCards)
             {
                 picturebox.Enabled = false;
 
             }
+
             mainMenuButton.Enabled = true;
             mainMenuButton.Visible = true;
 
@@ -495,7 +495,7 @@ namespace Durak
                     string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
                     historyTextBox.AppendText(Environment.NewLine + "Turn " + turn + extraInfo + Environment.NewLine);
                 }
-                if (mainPlayer.Size >= 6)
+                else if (mainPlayer.Size >= 6)
                 {
                     drawDecks();
                     string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";

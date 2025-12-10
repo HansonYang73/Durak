@@ -62,6 +62,8 @@
             this.cardAttack4 = new System.Windows.Forms.PictureBox();
             this.cardAttack5 = new System.Windows.Forms.PictureBox();
             this.cardAttack6 = new System.Windows.Forms.PictureBox();
+            this.numberOfCardsLabel = new System.Windows.Forms.Label();
+            this.winLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.botCard6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botCard5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botCard4)).BeginInit();
@@ -127,9 +129,12 @@
             // 
             // extraBotCards
             // 
+            this.extraBotCards.BackColor = System.Drawing.Color.Transparent;
+            this.extraBotCards.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extraBotCards.ForeColor = System.Drawing.Color.White;
             this.extraBotCards.Location = new System.Drawing.Point(1104, 16);
             this.extraBotCards.Name = "extraBotCards";
-            this.extraBotCards.Size = new System.Drawing.Size(86, 90);
+            this.extraBotCards.Size = new System.Drawing.Size(108, 58);
             this.extraBotCards.TabIndex = 39;
             // 
             // nextCard
@@ -157,6 +162,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(1123, 561);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 13);
@@ -167,9 +174,10 @@
             // 
             this.mainMenuButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.mainMenuButton.Enabled = false;
-            this.mainMenuButton.Location = new System.Drawing.Point(1263, 660);
+            this.mainMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainMenuButton.Location = new System.Drawing.Point(668, 415);
             this.mainMenuButton.Name = "mainMenuButton";
-            this.mainMenuButton.Size = new System.Drawing.Size(139, 70);
+            this.mainMenuButton.Size = new System.Drawing.Size(257, 96);
             this.mainMenuButton.TabIndex = 43;
             this.mainMenuButton.Text = "Return to main menu";
             this.mainMenuButton.UseVisualStyleBackColor = false;
@@ -178,6 +186,7 @@
             // 
             // botCard6
             // 
+            this.botCard6.BackColor = System.Drawing.Color.Transparent;
             this.botCard6.Location = new System.Drawing.Point(995, 13);
             this.botCard6.Name = "botCard6";
             this.botCard6.Size = new System.Drawing.Size(103, 163);
@@ -187,6 +196,7 @@
             // 
             // botCard5
             // 
+            this.botCard5.BackColor = System.Drawing.Color.Transparent;
             this.botCard5.Location = new System.Drawing.Point(886, 13);
             this.botCard5.Name = "botCard5";
             this.botCard5.Size = new System.Drawing.Size(103, 163);
@@ -196,6 +206,7 @@
             // 
             // botCard4
             // 
+            this.botCard4.BackColor = System.Drawing.Color.Transparent;
             this.botCard4.Location = new System.Drawing.Point(777, 13);
             this.botCard4.Name = "botCard4";
             this.botCard4.Size = new System.Drawing.Size(103, 163);
@@ -205,6 +216,7 @@
             // 
             // botCard3
             // 
+            this.botCard3.BackColor = System.Drawing.Color.Transparent;
             this.botCard3.Location = new System.Drawing.Point(668, 13);
             this.botCard3.Name = "botCard3";
             this.botCard3.Size = new System.Drawing.Size(103, 163);
@@ -214,6 +226,7 @@
             // 
             // botCard2
             // 
+            this.botCard2.BackColor = System.Drawing.Color.Transparent;
             this.botCard2.Location = new System.Drawing.Point(559, 13);
             this.botCard2.Name = "botCard2";
             this.botCard2.Size = new System.Drawing.Size(103, 163);
@@ -223,6 +236,7 @@
             // 
             // botCard1
             // 
+            this.botCard1.BackColor = System.Drawing.Color.Transparent;
             this.botCard1.Location = new System.Drawing.Point(450, 13);
             this.botCard1.Name = "botCard1";
             this.botCard1.Size = new System.Drawing.Size(103, 163);
@@ -232,6 +246,7 @@
             // 
             // cardDefend6
             // 
+            this.cardDefend6.BackColor = System.Drawing.SystemColors.Control;
             this.cardDefend6.Location = new System.Drawing.Point(995, 334);
             this.cardDefend6.Name = "cardDefend6";
             this.cardDefend6.Size = new System.Drawing.Size(103, 163);
@@ -242,6 +257,7 @@
             // 
             // cardDefend5
             // 
+            this.cardDefend5.BackColor = System.Drawing.SystemColors.Control;
             this.cardDefend5.Location = new System.Drawing.Point(886, 334);
             this.cardDefend5.Name = "cardDefend5";
             this.cardDefend5.Size = new System.Drawing.Size(103, 163);
@@ -252,6 +268,7 @@
             // 
             // cardDefend4
             // 
+            this.cardDefend4.BackColor = System.Drawing.SystemColors.Control;
             this.cardDefend4.Location = new System.Drawing.Point(777, 334);
             this.cardDefend4.Name = "cardDefend4";
             this.cardDefend4.Size = new System.Drawing.Size(103, 163);
@@ -262,6 +279,7 @@
             // 
             // cardDefend3
             // 
+            this.cardDefend3.BackColor = System.Drawing.SystemColors.Control;
             this.cardDefend3.Location = new System.Drawing.Point(668, 334);
             this.cardDefend3.Name = "cardDefend3";
             this.cardDefend3.Size = new System.Drawing.Size(103, 163);
@@ -272,6 +290,7 @@
             // 
             // cardDefend2
             // 
+            this.cardDefend2.BackColor = System.Drawing.SystemColors.Control;
             this.cardDefend2.Location = new System.Drawing.Point(559, 334);
             this.cardDefend2.Name = "cardDefend2";
             this.cardDefend2.Size = new System.Drawing.Size(103, 163);
@@ -282,6 +301,7 @@
             // 
             // cardDefend1
             // 
+            this.cardDefend1.BackColor = System.Drawing.SystemColors.Control;
             this.cardDefend1.Location = new System.Drawing.Point(450, 334);
             this.cardDefend1.Margin = new System.Windows.Forms.Padding(0);
             this.cardDefend1.Name = "cardDefend1";
@@ -294,6 +314,7 @@
             // 
             // card6
             // 
+            this.card6.BackColor = System.Drawing.Color.Transparent;
             this.card6.Location = new System.Drawing.Point(995, 568);
             this.card6.Name = "card6";
             this.card6.Size = new System.Drawing.Size(103, 163);
@@ -301,9 +322,12 @@
             this.card6.TabIndex = 13;
             this.card6.TabStop = false;
             this.card6.Click += new System.EventHandler(this.card_Click);
+            this.card6.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
+            this.card6.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // card5
             // 
+            this.card5.BackColor = System.Drawing.Color.Transparent;
             this.card5.Location = new System.Drawing.Point(886, 568);
             this.card5.Name = "card5";
             this.card5.Size = new System.Drawing.Size(103, 163);
@@ -311,9 +335,12 @@
             this.card5.TabIndex = 12;
             this.card5.TabStop = false;
             this.card5.Click += new System.EventHandler(this.card_Click);
+            this.card5.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
+            this.card5.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // card4
             // 
+            this.card4.BackColor = System.Drawing.Color.Transparent;
             this.card4.Location = new System.Drawing.Point(777, 568);
             this.card4.Name = "card4";
             this.card4.Size = new System.Drawing.Size(103, 163);
@@ -321,9 +348,12 @@
             this.card4.TabIndex = 11;
             this.card4.TabStop = false;
             this.card4.Click += new System.EventHandler(this.card_Click);
+            this.card4.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
+            this.card4.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // card3
             // 
+            this.card3.BackColor = System.Drawing.Color.Transparent;
             this.card3.Location = new System.Drawing.Point(668, 568);
             this.card3.Name = "card3";
             this.card3.Size = new System.Drawing.Size(103, 163);
@@ -331,9 +361,12 @@
             this.card3.TabIndex = 10;
             this.card3.TabStop = false;
             this.card3.Click += new System.EventHandler(this.card_Click);
+            this.card3.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
+            this.card3.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // card2
             // 
+            this.card2.BackColor = System.Drawing.Color.Transparent;
             this.card2.Location = new System.Drawing.Point(559, 568);
             this.card2.Name = "card2";
             this.card2.Size = new System.Drawing.Size(103, 163);
@@ -341,9 +374,12 @@
             this.card2.TabIndex = 9;
             this.card2.TabStop = false;
             this.card2.Click += new System.EventHandler(this.card_Click);
+            this.card2.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
+            this.card2.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // card1
             // 
+            this.card1.BackColor = System.Drawing.Color.Transparent;
             this.card1.Location = new System.Drawing.Point(450, 568);
             this.card1.Name = "card1";
             this.card1.Size = new System.Drawing.Size(103, 163);
@@ -351,6 +387,8 @@
             this.card1.TabIndex = 7;
             this.card1.TabStop = false;
             this.card1.Click += new System.EventHandler(this.card_Click);
+            this.card1.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
+            this.card1.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // mainDeck
             // 
@@ -368,17 +406,21 @@
             // 
             // empowerCard
             // 
+            this.empowerCard.BackColor = System.Drawing.Color.Transparent;
             this.empowerCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.empowerCard.Location = new System.Drawing.Point(1178, 220);
+            this.empowerCard.Location = new System.Drawing.Point(1178, 252);
             this.empowerCard.Name = "empowerCard";
-            this.empowerCard.Size = new System.Drawing.Size(130, 182);
+            this.empowerCard.Size = new System.Drawing.Size(149, 123);
             this.empowerCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.empowerCard.TabIndex = 14;
             this.empowerCard.TabStop = false;
             this.empowerCard.Click += new System.EventHandler(this.mainDeck_Click);
+            this.empowerCard.MouseEnter += new System.EventHandler(this.mainDeck_MouseEnter);
+            this.empowerCard.MouseLeave += new System.EventHandler(this.mainDeck_MouseLeave);
             // 
             // cardAttack1
             // 
+            this.cardAttack1.BackColor = System.Drawing.Color.Transparent;
             this.cardAttack1.Location = new System.Drawing.Point(450, 277);
             this.cardAttack1.Name = "cardAttack1";
             this.cardAttack1.Size = new System.Drawing.Size(103, 163);
@@ -388,6 +430,7 @@
             // 
             // cardAttack2
             // 
+            this.cardAttack2.BackColor = System.Drawing.Color.Transparent;
             this.cardAttack2.Location = new System.Drawing.Point(559, 277);
             this.cardAttack2.Name = "cardAttack2";
             this.cardAttack2.Size = new System.Drawing.Size(103, 163);
@@ -397,6 +440,7 @@
             // 
             // cardAttack3
             // 
+            this.cardAttack3.BackColor = System.Drawing.Color.Transparent;
             this.cardAttack3.Location = new System.Drawing.Point(668, 277);
             this.cardAttack3.Name = "cardAttack3";
             this.cardAttack3.Size = new System.Drawing.Size(103, 163);
@@ -406,6 +450,7 @@
             // 
             // cardAttack4
             // 
+            this.cardAttack4.BackColor = System.Drawing.Color.Transparent;
             this.cardAttack4.Location = new System.Drawing.Point(777, 277);
             this.cardAttack4.Name = "cardAttack4";
             this.cardAttack4.Size = new System.Drawing.Size(103, 163);
@@ -415,6 +460,7 @@
             // 
             // cardAttack5
             // 
+            this.cardAttack5.BackColor = System.Drawing.Color.Transparent;
             this.cardAttack5.Location = new System.Drawing.Point(886, 277);
             this.cardAttack5.Name = "cardAttack5";
             this.cardAttack5.Size = new System.Drawing.Size(103, 163);
@@ -424,6 +470,7 @@
             // 
             // cardAttack6
             // 
+            this.cardAttack6.BackColor = System.Drawing.Color.Transparent;
             this.cardAttack6.Location = new System.Drawing.Point(995, 277);
             this.cardAttack6.Name = "cardAttack6";
             this.cardAttack6.Size = new System.Drawing.Size(103, 163);
@@ -431,12 +478,37 @@
             this.cardAttack6.TabIndex = 21;
             this.cardAttack6.TabStop = false;
             // 
+            // numberOfCardsLabel
+            // 
+            this.numberOfCardsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.numberOfCardsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfCardsLabel.ForeColor = System.Drawing.Color.White;
+            this.numberOfCardsLabel.Location = new System.Drawing.Point(1271, 205);
+            this.numberOfCardsLabel.Name = "numberOfCardsLabel";
+            this.numberOfCardsLabel.Size = new System.Drawing.Size(108, 22);
+            this.numberOfCardsLabel.TabIndex = 44;
+            // 
+            // winLabel
+            // 
+            this.winLabel.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel.Enabled = false;
+            this.winLabel.Font = new System.Drawing.Font("Mongolian Baiti", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel.ForeColor = System.Drawing.Color.Red;
+            this.winLabel.Location = new System.Drawing.Point(432, 283);
+            this.winLabel.Name = "winLabel";
+            this.winLabel.Size = new System.Drawing.Size(740, 109);
+            this.winLabel.TabIndex = 45;
+            this.winLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.winLabel.Visible = false;
+            // 
             // GameBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Durak.Properties.Resources.CardTableBackground;
             this.ClientSize = new System.Drawing.Size(1414, 742);
+            this.Controls.Add(this.winLabel);
+            this.Controls.Add(this.numberOfCardsLabel);
             this.Controls.Add(this.mainMenuButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.goBack);
@@ -542,5 +614,7 @@
         private System.Windows.Forms.Button goBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button mainMenuButton;
+        private System.Windows.Forms.Label numberOfCardsLabel;
+        private System.Windows.Forms.Label winLabel;
     }
 }
