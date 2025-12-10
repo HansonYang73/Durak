@@ -533,7 +533,7 @@ namespace Durak
         {
             while (!endedTurn || !botEndedTurn)
             {
-                Console.WriteLine("\nYOOOOOO\n");
+                Console.WriteLine($"\nhas played:{played} and has ended:{endedTurn}\n");
                 await WaitForAttacker();
                 await WaitForDefender();
 
