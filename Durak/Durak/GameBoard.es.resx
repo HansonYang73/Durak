@@ -146,10 +146,10 @@
     <value>Volver al menú principal</value>
   </data>
   <data name="numberOfCardsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1169, 205</value>
+    <value>1197, 205</value>
   </data>
   <data name="numberOfCardsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 22</value>
+    <value>192, 22</value>
   </data>
   <data name="numberOfCardsLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>

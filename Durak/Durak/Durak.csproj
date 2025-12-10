@@ -76,6 +76,9 @@
     <EmbeddedResource Include="Durak.resx">
       <DependentUpon>Durak.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GameBoard.en.resx">
+      <DependentUpon>GameBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameBoard.es.resx">
       <DependentUpon>GameBoard.cs</DependentUpon>
     </EmbeddedResource>

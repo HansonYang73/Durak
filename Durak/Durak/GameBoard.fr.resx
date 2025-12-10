@@ -146,7 +146,7 @@
     <value>Retour au menu principal</value>
   </data>
   <data name="numberOfCardsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1206, 205</value>
+    <value>1183, 205</value>
   </data>
   <data name="numberOfCardsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
