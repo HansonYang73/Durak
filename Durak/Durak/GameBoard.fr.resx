@@ -154,4 +154,10 @@
   <data name="numberOfCardsLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
+  <data name="winLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 283</value>
+  </data>
+  <data name="winLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 109</value>
+  </data>
 </root>

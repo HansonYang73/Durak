@@ -120,7 +120,7 @@ namespace Durak
             }
             else if (Durak.getCulture() == "es-ES")
             {
-                historyTextBox.AppendText("Turn " + turn + " (Atacante: Tu, Defensor: Bot)" + Environment.NewLine);
+                historyTextBox.AppendText("Turno " + turn + " (Atacante: Tu, Defensor: Bot)" + Environment.NewLine);
             }
 
 
@@ -703,7 +703,7 @@ namespace Durak
                     }
                     else if (Durak.getCulture() == "es-ES")
                     {
-                        historyTextBox.AppendText("¡Haz clic en la baraja para robar las cartas!" + Environment.NewLine);
+                        historyTextBox.AppendText(Environment.NewLine + "¡Haz clic en la baraja para robar las cartas!" + Environment.NewLine);
                     }
                 }
             }
