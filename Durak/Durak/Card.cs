@@ -112,7 +112,7 @@ namespace Durak
             string suitStr = Suit.ToString();
             string culture = Durak.getCulture();
 
-            if (suitStr == "Heart")
+            if (suitStr.Equals("Heart"))
             {
                 if (culture == "en-US")
                     suitStr = "Heart";
@@ -160,11 +160,10 @@ namespace Durak
             {
                 return numStr + " des " + suitStr;
             }
-            else if (Durak.getCulture() == "es-ES")
+            else
             {
-                numStr = "El Rey";
+                return numStr + " de " + suitStr;
             }
-            return numStr + " de " + suitStr + "s";
 
             
         }
