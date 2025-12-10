@@ -26,10 +26,6 @@ namespace Durak
             if (boardDeck.Size == 0)
             {
                 MainDeck.SortByPower();
-                if (drawDeck.Size == 0)
-                {
-                    return MainDeck.Play(MainDeck.Size-1);
-                }
                 return MainDeck.Play(0);
 
             }
