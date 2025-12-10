@@ -117,4 +117,958 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;cardAttack4.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cardDefend5.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="card6.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;card6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;extraBotCards.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cardDefend1.Name" xml:space="preserve">
+    <value>cardDefend1</value>
+  </data>
+  <data name="&gt;&gt;winLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cardDefend1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;card6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="card5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="botCard3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="card6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>995, 568</value>
+  </data>
+  <data name="&gt;&gt;card3.Name" xml:space="preserve">
+    <value>card3</value>
+  </data>
+  <data name="&gt;&gt;botCard2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;card4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;goBack.Name" xml:space="preserve">
+    <value>goBack</value>
+  </data>
+  <data name="&gt;&gt;mainMenuButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cardAttack2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>559, 277</value>
+  </data>
+  <data name="&gt;&gt;numberOfCardsLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="historyTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="&gt;&gt;botCard1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mainDeck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1263, 230</value>
+  </data>
+  <data name="&gt;&gt;cardDefend3.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="numberOfCardsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 22</value>
+  </data>
+  <data name="historyTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;historyTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cardDefend3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="card4.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cardDefend2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="cardAttack3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>668, 277</value>
+  </data>
+  <data name="&gt;&gt;cardDefend4.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;botCard5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="winLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="endTurnButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1290, 570</value>
+  </data>
+  <data name="card4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="&gt;&gt;sortingComboBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;card5.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;botCard3.Name" xml:space="preserve">
+    <value>botCard3</value>
+  </data>
+  <data name="cardDefend1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="sortingComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="card5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>886, 568</value>
+  </data>
+  <data name="botCard6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="mainMenuButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>668, 415</value>
+  </data>
+  <data name="card1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="cardAttack5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="card3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;card1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cardDefend6.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="botCard2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>559, 13</value>
+  </data>
+  <data name="&gt;&gt;botCard4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cardDefend5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="empowerCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1178, 252</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1414, 742</value>
+  </data>
+  <data name="&gt;&gt;card2.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="cardDefend3.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="winLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 109</value>
+  </data>
+  <data name="&gt;&gt;card1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cardDefend6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="botCard3.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;mainMenuButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="historyTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 718</value>
+  </data>
+  <data name="&gt;&gt;cardAttack6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;historyTextBox.Name" xml:space="preserve">
+    <value>historyTextBox</value>
+  </data>
+  <data name="&gt;&gt;cardAttack4.Name" xml:space="preserve">
+    <value>cardAttack4</value>
+  </data>
+  <data name="&gt;&gt;cardAttack3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cardDefend1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;cardAttack4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="extraBotCards.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 58</value>
+  </data>
+  <data name="&gt;&gt;botCard2.Name" xml:space="preserve">
+    <value>botCard2</value>
+  </data>
+  <data name="&gt;&gt;botCard6.Name" xml:space="preserve">
+    <value>botCard6</value>
+  </data>
+  <data name="card4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>777, 568</value>
+  </data>
+  <data name="&gt;&gt;historyTextBox.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;cardAttack5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="mainMenuButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="&gt;&gt;botCard4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cardAttack5.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="mainDeck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 162</value>
+  </data>
+  <data name="&gt;&gt;cardDefend6.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="empowerCard.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="card1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="&gt;&gt;cardDefend4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1123, 561</value>
+  </data>
+  <data name="&gt;&gt;nextCard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cardDefend5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="botCard2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;cardDefend1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="sortingComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="winLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>432, 283</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Sort Deck By:</value>
+  </data>
+  <data name="card6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="&gt;&gt;card2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cardDefend3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;endTurnButton.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="card2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;numberOfCardsLabel.Name" xml:space="preserve">
+    <value>numberOfCardsLabel</value>
+  </data>
+  <data name="&gt;&gt;empowerCard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="goBack.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;botCard4.Name" xml:space="preserve">
+    <value>botCard4</value>
+  </data>
+  <data name="&gt;&gt;cardDefend1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;botCard5.Name" xml:space="preserve">
+    <value>botCard5</value>
+  </data>
+  <data name="extraBotCards.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="botCard3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>668, 13</value>
+  </data>
+  <data name="&gt;&gt;cardDefend2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botCard2.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="cardAttack5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>886, 277</value>
+  </data>
+  <data name="&gt;&gt;botCard5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cardDefend1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="historyTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="historyTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="botCard3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;cardDefend1.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="cardDefend2.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;cardDefend2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;card2.Name" xml:space="preserve">
+    <value>card2</value>
+  </data>
+  <data name="&gt;&gt;cardAttack6.Name" xml:space="preserve">
+    <value>cardAttack6</value>
+  </data>
+  <data name="mainMenuButton.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="botCard1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>GameBoard</value>
+  </data>
+  <data name="botCard4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="cardDefend2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="endTurnButton.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="mainMenuButton.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;card1.Name" xml:space="preserve">
+    <value>card1</value>
+  </data>
+  <data name="&gt;&gt;extraBotCards.Name" xml:space="preserve">
+    <value>extraBotCards</value>
+  </data>
+  <data name="goBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 708</value>
+  </data>
+  <data name="card3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="winLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="historyTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;winLabel.Name" xml:space="preserve">
+    <value>winLabel</value>
+  </data>
+  <data name="&gt;&gt;botCard3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;card1.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="cardAttack6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="cardDefend6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;goBack.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="&gt;&gt;card2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="nextCard.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="&gt;&gt;cardAttack2.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="card2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;cardAttack3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cardAttack5.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;mainDeck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botCard4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="&gt;&gt;goBack.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;goBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nextCard.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cardDefend4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="endTurnButton.Text" xml:space="preserve">
+    <value>End Turn</value>
+  </data>
+  <data name="&gt;&gt;cardDefend5.Name" xml:space="preserve">
+    <value>cardDefend5</value>
+  </data>
+  <data name="&gt;&gt;cardAttack2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;card4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cardDefend3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="&gt;&gt;extraBotCards.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;botCard6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cardAttack1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;endTurnButton.Name" xml:space="preserve">
+    <value>endTurnButton</value>
+  </data>
+  <data name="card2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="sortingComboBox.Items1" xml:space="preserve">
+    <value>Suit</value>
+  </data>
+  <data name="&gt;&gt;nextCard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mainMenuButton.Text" xml:space="preserve">
+    <value>Return to main menu</value>
+  </data>
+  <data name="&gt;&gt;cardAttack5.Name" xml:space="preserve">
+    <value>cardAttack5</value>
+  </data>
+  <data name="&gt;&gt;extraBotCards.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;botCard1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="cardAttack2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="&gt;&gt;numberOfCardsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="endTurnButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 38</value>
+  </data>
+  <data name="cardDefend4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="nextCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1104, 708</value>
+  </data>
+  <data name="goBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="&gt;&gt;sortingComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainDeck.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;cardDefend5.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;cardDefend5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botCard1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 13</value>
+  </data>
+  <data name="&gt;&gt;card3.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="winLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Mongolian Baiti, 72pt, style=Bold</value>
+  </data>
+  <data name="cardDefend5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="&gt;&gt;cardAttack3.Name" xml:space="preserve">
+    <value>cardAttack3</value>
+  </data>
+  <data name="&gt;&gt;botCard6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="card4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="goBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="botCard1.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="cardAttack1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="&gt;&gt;botCard3.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;nextCard.Name" xml:space="preserve">
+    <value>nextCard</value>
+  </data>
+  <data name="cardDefend2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="&gt;&gt;cardDefend3.Name" xml:space="preserve">
+    <value>cardDefend3</value>
+  </data>
+  <data name="&gt;&gt;cardDefend4.Name" xml:space="preserve">
+    <value>cardDefend4</value>
+  </data>
+  <data name="&gt;&gt;botCard1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;card6.Name" xml:space="preserve">
+    <value>card6</value>
+  </data>
+  <data name="&gt;&gt;botCard4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="sortingComboBox.Items2" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="&gt;&gt;cardDefend6.Name" xml:space="preserve">
+    <value>cardDefend6</value>
+  </data>
+  <data name="cardAttack3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="card5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="empowerCard.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="cardAttack1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="extraBotCards.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="card1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="botCard2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GameBoard</value>
+  </data>
+  <data name="&gt;&gt;endTurnButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="winLabel.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cardAttack4.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="numberOfCardsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1271, 205</value>
+  </data>
+  <data name="&gt;&gt;card3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cardDefend5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cardAttack3.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;card4.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="cardDefend6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>995, 334</value>
+  </data>
+  <data name="&gt;&gt;empowerCard.Name" xml:space="preserve">
+    <value>empowerCard</value>
+  </data>
+  <data name="cardAttack1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="cardAttack4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>777, 277</value>
+  </data>
+  <data name="&gt;&gt;botCard6.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;endTurnButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cardDefend4.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="cardDefend4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="mainMenuButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 96</value>
+  </data>
+  <data name="&gt;&gt;card5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;winLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;card5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="numberOfCardsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;cardDefend2.Name" xml:space="preserve">
+    <value>cardDefend2</value>
+  </data>
+  <data name="cardAttack6.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;botCard1.Name" xml:space="preserve">
+    <value>botCard1</value>
+  </data>
+  <data name="&gt;&gt;card6.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="botCard6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="cardAttack3.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="extraBotCards.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1104, 16</value>
+  </data>
+  <data name="cardDefend1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="mainDeck.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;botCard2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cardDefend3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="nextCard.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;cardDefend6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cardAttack2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="mainMenuButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;empowerCard.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="botCard5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="botCard6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>995, 13</value>
+  </data>
+  <data name="&gt;&gt;sortingComboBox.Name" xml:space="preserve">
+    <value>sortingComboBox</value>
+  </data>
+  <data name="cardDefend4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>777, 334</value>
+  </data>
+  <data name="card2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>559, 568</value>
+  </data>
+  <data name="botCard6.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;cardDefend4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cardAttack1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cardAttack6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="cardAttack6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>995, 277</value>
+  </data>
+  <data name="mainDeck.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cardAttack1.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;cardDefend2.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="goBack.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="botCard4.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="cardDefend5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>886, 334</value>
+  </data>
+  <data name="card3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>668, 568</value>
+  </data>
+  <data name="&gt;&gt;cardAttack6.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="botCard5.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="cardAttack4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;cardDefend6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;empowerCard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="card3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;botCard2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="empowerCard.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;cardAttack5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cardDefend3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cardAttack5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="card5.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="cardDefend6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="cardDefend1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;numberOfCardsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="botCard5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;historyTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;sortingComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;winLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;botCard5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="botCard1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="cardDefend1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 334</value>
+  </data>
+  <data name="cardDefend2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>559, 334</value>
+  </data>
+  <data name="&gt;&gt;cardAttack4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainDeck.Name" xml:space="preserve">
+    <value>mainDeck</value>
+  </data>
+  <data name="&gt;&gt;mainDeck.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cardAttack2.Name" xml:space="preserve">
+    <value>cardAttack2</value>
+  </data>
+  <data name="nextCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sortingComboBox.Items" xml:space="preserve">
+    <value>Power</value>
+  </data>
+  <data name="empowerCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 123</value>
+  </data>
+  <data name="&gt;&gt;nextCard.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="botCard4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>777, 13</value>
+  </data>
+  <data name="cardAttack2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;cardAttack6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cardDefend3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>668, 334</value>
+  </data>
+  <data name="&gt;&gt;card3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;card5.Name" xml:space="preserve">
+    <value>card5</value>
+  </data>
+  <data name="card6.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="cardAttack1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 277</value>
+  </data>
+  <data name="&gt;&gt;mainMenuButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cardAttack2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;mainMenuButton.Name" xml:space="preserve">
+    <value>mainMenuButton</value>
+  </data>
+  <data name="botCard5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>886, 13</value>
+  </data>
+  <data name="card1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 568</value>
+  </data>
+  <data name="cardAttack3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="winLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="sortingComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1123, 580</value>
+  </data>
+  <data name="&gt;&gt;botCard3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cardAttack4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 163</value>
+  </data>
+  <data name="&gt;&gt;cardAttack1.Name" xml:space="preserve">
+    <value>cardAttack1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numberOfCardsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;card4.Name" xml:space="preserve">
+    <value>card4</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>fr</value>
+  </metadata>
 </root>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Durak));
             this.startButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,138 +46,100 @@
             // 
             // startButton
             // 
+            resources.ApplyResources(this.startButton, "startButton");
             this.startButton.BackColor = System.Drawing.SystemColors.ControlDark;
             this.startButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.startButton.Location = new System.Drawing.Point(255, 267);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(129, 23);
-            this.startButton.TabIndex = 8;
-            this.startButton.Text = "&Play!";
             this.startButton.UseVisualStyleBackColor = false;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // label1
             // 
+            resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label1.Location = new System.Drawing.Point(151, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 183);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Durak\r\n   Online";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
+            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(151, 231);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(339, 63);
-            this.label2.TabIndex = 10;
             // 
             // label3
             // 
+            resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label3.Location = new System.Drawing.Point(163, 240);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(320, 24);
-            this.label3.TabIndex = 11;
             // 
             // label4
             // 
+            resources.ApplyResources(this.label4, "label4");
             this.label4.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label4.Location = new System.Drawing.Point(151, 294);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(339, 10);
-            this.label4.TabIndex = 12;
             // 
             // label5
             // 
+            resources.ApplyResources(this.label5, "label5");
             this.label5.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label5.Location = new System.Drawing.Point(151, 48);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(339, 2);
-            this.label5.TabIndex = 13;
             // 
             // label6
             // 
+            resources.ApplyResources(this.label6, "label6");
             this.label6.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label6.Location = new System.Drawing.Point(151, 48);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(3, 183);
-            this.label6.TabIndex = 14;
             // 
             // label7
             // 
+            resources.ApplyResources(this.label7, "label7");
             this.label7.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label7.Location = new System.Drawing.Point(487, 48);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(3, 184);
-            this.label7.TabIndex = 15;
             // 
             // label8
             // 
+            resources.ApplyResources(this.label8, "label8");
             this.label8.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label8.Location = new System.Drawing.Point(151, 226);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(339, 5);
-            this.label8.TabIndex = 16;
             // 
             // label9
             // 
+            resources.ApplyResources(this.label9, "label9");
             this.label9.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(0, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(642, 38);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Welcome to the Online Durak Application\r\n";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
+            resources.ApplyResources(this.label10, "label10");
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.ForeColor = System.Drawing.SystemColors.Control;
-            this.label10.Location = new System.Drawing.Point(255, 304);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(129, 54);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Click Play to Get Started";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // languageComboBox
             // 
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
-            "English",
-            "Français",
-            "Español"});
-            this.languageComboBox.Location = new System.Drawing.Point(509, 185);
+            resources.GetString("languageComboBox.Items"),
+            resources.GetString("languageComboBox.Items1"),
+            resources.GetString("languageComboBox.Items2")});
             this.languageComboBox.Name = "languageComboBox";
-            this.languageComboBox.Size = new System.Drawing.Size(121, 21);
-            this.languageComboBox.TabIndex = 19;
+            this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
+            resources.ApplyResources(this.label11, "label11");
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(506, 169);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 13);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Language:";
             // 
             // Durak
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Durak.Properties.Resources.CardTableBackground;
-            this.ClientSize = new System.Drawing.Size(642, 359);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.label10);
@@ -191,7 +154,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Durak";
-            this.Text = "Durak";
             this.Load += new System.EventHandler(this.durakForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
