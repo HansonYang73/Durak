@@ -489,6 +489,12 @@ namespace Durak
                 turn++;
 
 
+                if (boardDeck.Size == 0)
+                {
+                    drawDecks();
+                    string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
+                    historyTextBox.AppendText(Environment.NewLine + "Turn " + turn + extraInfo + Environment.NewLine);
+                }
                 if (mainPlayer.Size >= 6)
                 {
                     drawDecks();
