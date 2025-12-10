@@ -703,7 +703,7 @@ namespace Durak
                     }
                     else if (Durak.getCulture() == "es-ES")
                     {
-                        historyTextBox.AppendText(Environment.NewLine + "¡Haz clic en la baraja para robar las cartas!" + Environment.NewLine);
+                        historyTextBox.AppendText(Environment.NewLine + "¡Haz clic en la baraja para robar las cartas!" + Environment.NewLine + Environment.NewLine);
                     }
                 }
             }
