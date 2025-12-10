@@ -482,7 +482,7 @@ namespace Durak
 
         private bool CanAttack(Card attackCard)
         {
-            return (boardDeck.Size == 0 || boardDeck.ContainsNumber(attackCard.Number)) && !played && boardDeck.Size % 2 == 0; // change true to canAttack bool variable
+            return (boardDeck.Size == 0 || boardDeck.ContainsNumber(attackCard.Number)) && !played && boardDeck.Size % 2 == 0 && boardDeck.Size < 12; // change true to canAttack bool variable
         }
 
         private bool CanDefend(Card card)
@@ -551,9 +551,8 @@ namespace Durak
                 }
                 else if (Durak.getCulture() == "es-ES")
                 {
-                    winLabel.Text = "Vous Avez Gagné!";
+                    winLabel.Text = "Has Ganado!";
                 }
-                winLabel.Text = "Has Ganado!";
             }
             else if (botPlayer.Size == 0)
             {
