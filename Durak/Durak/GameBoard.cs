@@ -347,13 +347,10 @@ namespace Durak
             if (mainPlayer.Size > 6 * (page))
             {
                 nextCard.Enabled = true;
-
-
             }
             else
             {
                 nextCard.Enabled = false;
-
             }
 
             if (page > 1)
