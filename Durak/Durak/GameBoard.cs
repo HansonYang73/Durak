@@ -103,13 +103,11 @@ namespace Durak
             played = false;
 
             empowerCard.Image = (Image)Properties.Resources.ResourceManager.GetObject(deck.Get(deck.Size - 1).CardImg);
-            Console.WriteLine(deck.Get(deck.Size - 1).CardImg);
             empowerCard.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
             playersCards = new List<PictureBox> { card1, card2, card3, card4, card5, card6 };
             enemyCards = new List<PictureBox> { botCard1, botCard2, botCard3, botCard4, botCard5, botCard6 };
             attackingSlots = new List<PictureBox> { cardAttack1, cardAttack2, cardAttack3, cardAttack4, cardAttack5, cardAttack6 };
             defendingSlots = new List<PictureBox> { cardDefend1, cardDefend2, cardDefend3, cardDefend4, cardDefend5, cardDefend6 };
-            Console.WriteLine(deck.Size);
 
             drawDecks();
             fillBotDeck();
@@ -117,8 +115,6 @@ namespace Durak
 
             historyTextBox.AppendText("Turn " + turn + " (Attacker: You, Defender: Bot)" + Environment.NewLine);
 
-
-            StartTurn();
         }
 
         public string FightMode
@@ -133,7 +129,7 @@ namespace Durak
 
         private void mainDeck_Click(object sender, EventArgs e)
         {
-            if (endedTurn && botEndedTurn)
+            if (boardDeck.Size == 0 && (mainPlayer.Size < 6 || botPlayer.Size < 0))
             {
                 drawDecks();
                 fillBotDeck();
@@ -142,7 +138,7 @@ namespace Durak
                 string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
                 historyTextBox.AppendText("Turn " + turn + extraInfo + Environment.NewLine);
 
-                StartTurn();
+                //StartTurn();
             }
         }
 
@@ -177,6 +173,8 @@ namespace Durak
 
             endedTurn = false;
             botEndedTurn = false;
+
+            StartTurn();
         }
 
         private void fillBotDeck()
@@ -264,7 +262,6 @@ namespace Durak
                 goBack.Enabled = false;
             }
 
-            Console.WriteLine(deck.Size);
         }
 
         private void card_Click(object sender, EventArgs e)
@@ -275,9 +272,6 @@ namespace Durak
             {
                 attackOrDefend(card, cardInd);
             }
-
-            Console.WriteLine("Player Size: " + mainPlayer.Size);
-            Console.WriteLine("Bot Size: " + botPlayer.Size);
             fillDeck();
         }
         private void attackOrDefend(PictureBox card, int i)
@@ -404,18 +398,18 @@ namespace Durak
         }
 
 
-        private void empowerCard_Click(object sender, EventArgs e)
-        {
-            //pickUpLastEmpoweredCard();
-            if (endedTurn && botEndedTurn)
-            {
-                drawDecks();
-                fillBotDeck();
-                fillDeck();
+        //private void empowerCard_Click(object sender, EventArgs e)
+        //{
+        //    //pickUpLastEmpoweredCard();
+        //    //if (endedTurn && botEndedTurn)
+        //    //{
+        //    //    drawDecks();
+        //    //    fillBotDeck();
+        //    //    fillDeck();
 
-                StartTurn();
-            }
-        }
+        //    //    StartTurn();
+        //    //}
+        //}
 
         private void empowerCard_MouseEnter(object sender, EventArgs e)
         {
@@ -435,14 +429,15 @@ namespace Durak
                 endedTurn = true;
             }
             // deal with bots attack and user defend and user attack
-            if (boardDeck.Size > 0)
-            {
-                EndTurn();
-            }
+            //if (boardDeck.Size > 0)
+            //{
+            //    EndTurn();
+            //}
         }
 
         private void EndTurn()
         {
+            Console.WriteLine("End turn got called");
             if (endedTurn && botEndedTurn)
             {
                 if (boardDeck.Size % 2 == 1)
@@ -459,7 +454,6 @@ namespace Durak
 
                     fightMode = fightMode == "Attack" ? "Defend" : "Attack";
 
-                    Console.WriteLine("Current Attacker is player?: " + (currentAttacker == mainPlayer));
                 }
 
                 if (currentAttacker == mainPlayer)
@@ -477,17 +471,15 @@ namespace Durak
                 if (mainPlayer.Size >= 6)
                 {
                     drawDecks();
+                    string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
+                    historyTextBox.AppendText(Environment.NewLine + "Turn " + turn + extraInfo + Environment.NewLine);
                 }
-                endedTurn = false;
-                botEndedTurn = false;
+                //endedTurn = false;
+                //botEndedTurn = false;
                 fillBotDeck();
                 fillDeck();
 
-                string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
-                historyTextBox.AppendText(Environment.NewLine + "Turn " + turn + extraInfo + Environment.NewLine);
-
-                StartTurn();
-                if (deck.Size > 0) 
+                if (deck.Size > 0 && mainPlayer.Size < 6) 
                 {
                     historyTextBox.AppendText(Environment.NewLine + "Click the deck to draw the cards!" + Environment.NewLine + Environment.NewLine);
                 }
@@ -533,24 +525,53 @@ namespace Durak
 
         private async Task StartTurn()
         {
-            while (!endedTurn || !botEndedTurn)
+            Console.WriteLine("STARTED STARTTURN METHOD");
+            if (mainPlayer == currentAttacker)
             {
-                if (!botEndedTurn || !endedTurn)
+                while (!endedTurn || !botEndedTurn)
                 {
-                    await WaitForAttacker();
-                    Console.WriteLine($"\nAFTER ATTACK: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
-                }
-                if (!botEndedTurn || !endedTurn)
-                {
-                    await WaitForDefender();
-                    Console.WriteLine($"\nAFTER DEFEND: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
-                }
-
-                if (boardDeck.Size > 0)
-                {
-                    EndTurn();
+                    if (!botEndedTurn || !endedTurn)
+                    {
+                        await WaitForAttacker();
+                        Console.WriteLine($"\nAFTER ATTACK: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
+                    }
+                    if (!botEndedTurn || !endedTurn)
+                    {
+                        await WaitForDefender();
+                        Console.WriteLine($"\nAFTER DEFEND: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
+                    }
+                    if (boardDeck.Size == 0)
+                    {
+                        break;
+                    }
                 }
             }
+            else
+            {
+                while (!endedTurn || !botEndedTurn)
+                {
+                    Console.WriteLine("Played: " + played);
+                    if (!botEndedTurn || !endedTurn)
+                    {
+                        await WaitForDefender();
+                    }
+                    if (!botEndedTurn || !endedTurn)
+                    {
+                        await WaitForAttacker();
+                    }
+                    if (boardDeck.Size == 0)
+                    {
+                        break;
+                    }
+                }
+            }
+
+            if (boardDeck.Size > 0)
+            {
+                EndTurn();
+                Console.WriteLine("Start Turn called end turn");
+            }
+            Console.WriteLine("ENDED STARTTURN METHOD");
         }
 
         private async Task WaitForAttacker()
