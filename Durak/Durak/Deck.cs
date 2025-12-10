@@ -53,7 +53,10 @@ namespace Durak
             Size = 0;
 
             this.isBot = isBot;
-            
+            if (isBot)
+            {
+                bot = new Bot(this);
+            }
             //for (int i = 0; i < 6; i++)
             //{
             //    AddCard(mainDeck.Draw());

@@ -9,80 +9,77 @@ namespace Durak
     internal class Bot // Add sorting to Deck.cs
     {
         private Deck MainDeck { get; set; }
-        private Deck BoardDeck { get; set; }
-
-        private Deck DrawDeck { get; set; }
 
         private Deck attackingDeck;
         private Deck defendingDeck;
-        public Bot(Deck deck, Deck boardDeck, Deck drawDeck)
+        public Bot(Deck deck)
         {
             MainDeck = deck;
-            BoardDeck = boardDeck;
-            DrawDeck = drawDeck;
 
             attackingDeck = new Deck(false);
             defendingDeck = new Deck(false);
         }
 
-        public Card Attack(bool firstAttack) // return null for end turn
+        public Card Attack(Deck boardDeck, Deck drawDeck) // return null for end turn
         {
-            if (firstAttack)
+            attackingDeck = new Deck(false);
+            if (boardDeck.Size == 0)
             {
                 MainDeck.SortByPower();
-                if (DrawDeck.Size == 0)
+                if (drawDeck.Size == 0)
                 {
-                    return MainDeck.GetDeck()[MainDeck.Size];
+                    return MainDeck.Play(MainDeck.Size-1);
                 }
-                return MainDeck.Get(0);
+                return MainDeck.Play(0);
 
             }
-            else if (CanAttack())
+            else if (CanAttack(boardDeck))
             {
                 attackingDeck.SortByPower();
-                if (DrawDeck.Size > 0 && MainDeck.GetDeck()[0].Power + 9 > attackingDeck.GetDeck()[0].Power)
+                if (drawDeck.Size > 0 && MainDeck.GetDeck()[0].Power + 9 > attackingDeck.GetDeck()[0].Power)
                 { //If draw deck is greater than 0 and the power of the lowest card in your attacking hand is less than 9 power levels greater. play card
-                    return attackingDeck.Get(0);
+                    return MainDeck.Play(attackingDeck.Get(0));
                 }//end game, guarantee extra attack if possible
-                else if (DrawDeck.Size == 0)
+                else if (drawDeck.Size == 0)
                 {
-                    return attackingDeck.Get(0);
+                    return MainDeck.Play(attackingDeck.Get(0));
                 }
             }
 
             return null;
         }
 
-        public Card Defend()
+        public Card Defend(Deck boardDeck, Deck drawDeck)
         {
-            if (CanDefend())
+            defendingDeck = new Deck(false);
+            if (CanDefend(boardDeck))
             {
                 defendingDeck.SortByPower();
-                return defendingDeck.Get(0);
+                return MainDeck.Play(defendingDeck.Get(0));
             }
             return null;
         }
 
 
-        private bool CanAttack()
+        private bool CanAttack(Deck boardDeck)
         {
             bool canAttack = false;
             foreach (Card card in MainDeck.GetDeck())
             {
-                if (BoardDeck.ContainsNumber(card.Number))
+                if (boardDeck.ContainsNumber(card.Number))
                 {
                     attackingDeck.AddCard(card);
                     canAttack = true;
                 }
             }
 
-            return canAttack;
+            return canAttack && boardDeck.Size < 12;
         }
 
-        private bool CanDefend()
+        private bool CanDefend(Deck boardDeck)
         {
             bool canDefend = false;
-            Card attackingCard = BoardDeck.Get(BoardDeck.Size-1);
+            Card attackingCard = boardDeck.Get(boardDeck.Size-1);
 
             foreach (Card card in MainDeck.GetDeck())
             {
@@ -93,7 +90,7 @@ namespace Durak
                 }
             }
 
-            return canDefend;
+            return canDefend && boardDeck.Size % 2 == 1;
         }
     }
 }
