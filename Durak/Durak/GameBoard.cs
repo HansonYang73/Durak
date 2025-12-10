@@ -554,7 +554,7 @@ namespace Durak
             {
                 await Task.Delay(1000);
                 Card attackCard = currentAttacker.bot.Attack(boardDeck, deck);
-                if (attackCard != null)
+                if (attackCard != null && boardDeck.Size % 2 == 0)
                 {
                     historyTextBox.AppendText("Bot has attacked with a " + attackCard.ToString() + Environment.NewLine);
 
