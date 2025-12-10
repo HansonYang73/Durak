@@ -424,7 +424,7 @@ namespace Durak
 
         private void endTurnButton_Click(object sender, EventArgs e)
         {
-            if (!endedTurn)
+            if (!endedTurn && boardDeck.Size > 0)
             {
                 historyTextBox.AppendText("You have ended your turn" + Environment.NewLine);
                 endedTurn = true;
@@ -529,11 +529,8 @@ namespace Durak
             while (!endedTurn || !botEndedTurn)
             {
                 await WaitForAttacker();
-                Console.WriteLine("player played");
                 await WaitForDefender();
-                Console.WriteLine("bot played");
 
-                Console.WriteLine(endedTurn + " and " + botEndedTurn);
             }
             if (boardDeck.Size > 0)
             {
