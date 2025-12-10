@@ -115,7 +115,7 @@ namespace Durak
             fillBotDeck();
             fillDeck();
 
-            historyTextBox.AppendText("Turn" + turn + " (Attacker: You, Defender: Bot)" + Environment.NewLine);
+            historyTextBox.AppendText("Turn " + turn + " (Attacker: You, Defender: Bot)" + Environment.NewLine);
 
 
             StartTurn();
@@ -140,7 +140,7 @@ namespace Durak
                 fillDeck();
 
                 string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
-                historyTextBox.AppendText("Turn" + turn + extraInfo + Environment.NewLine);
+                historyTextBox.AppendText("Turn " + turn + extraInfo + Environment.NewLine);
 
                 StartTurn();
             }
@@ -176,6 +176,7 @@ namespace Durak
             Sort();
 
             endedTurn = false;
+            botEndedTurn = false;
         }
 
         private void fillBotDeck()
@@ -460,7 +461,21 @@ namespace Durak
                 ClearBoard();
                 turn++;
 
-                historyTextBox.AppendText(Environment.NewLine + "Click the deck to draw the cards!" + Environment.NewLine + Environment.NewLine);
+                if (mainPlayer.Size >= 6)
+                {
+                    drawDecks();
+                    fillBotDeck();
+                    fillDeck();
+
+                    string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
+                    historyTextBox.AppendText(Environment.NewLine + "Turn " + turn + extraInfo + Environment.NewLine);
+
+                    StartTurn();
+                }
+                else
+                {
+                    historyTextBox.AppendText(Environment.NewLine + "Click the deck to draw the cards!" + Environment.NewLine + Environment.NewLine);
+                }
             }
         }
 
@@ -552,7 +567,6 @@ namespace Durak
                 }
 
                 played = false;
-                endedTurn = false;
             }
         }
 
