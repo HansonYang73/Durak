@@ -555,8 +555,11 @@ namespace Durak
             foreach (PictureBox picturebox in playersCards)
             {
                 picturebox.Enabled = false;
-
             }
+            endTurnButton.Enabled = false;
+            sortingComboBox.Enabled = false;
+            nextCard.Enabled = false;
+            goBack.Enabled = false;
 
             mainMenuButton.Enabled = true;
             mainMenuButton.Visible = true;
@@ -714,53 +717,20 @@ namespace Durak
 
         private async Task StartTurn()
         {
-            Console.WriteLine("STARTED STARTTURN METHOD");
-            if (mainPlayer == currentAttacker)
+            while (!endedTurn || !botEndedTurn)
             {
-                while (!endedTurn || !botEndedTurn)
+                await WaitForAttacker();
+                await WaitForDefender();
+                if (boardDeck.Size == 0)
                 {
-                    if (!botEndedTurn || !endedTurn)
-                    {
-                        await WaitForAttacker();
-                        Console.WriteLine($"\nAFTER ATTACK: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
-                    }
-                    if (!botEndedTurn || !endedTurn)
-                    {
-                        await WaitForDefender();
-                        Console.WriteLine($"\nAFTER DEFEND: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
-                    }
-                    if (boardDeck.Size == 0)
-                    {
-                        break;
-                    }
-                }
-            }
-            else
-            {
-                while (!endedTurn || !botEndedTurn)
-                {
-                    Console.WriteLine("Played: " + played);
-                    if (!botEndedTurn || !endedTurn)
-                    {
-                        await WaitForDefender();
-                    }
-                    if (!botEndedTurn || !endedTurn)
-                    {
-                        await WaitForAttacker();
-                    }
-                    if (boardDeck.Size == 0)
-                    {
-                        break;
-                    }
+                    break;
                 }
             }
 
             if (boardDeck.Size > 0)
             {
                 EndTurn();
-                Console.WriteLine("Start Turn called end turn");
             }
-            Console.WriteLine("ENDED STARTTURN METHOD");
         }
 
         private async Task WaitForAttacker()
