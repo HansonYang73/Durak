@@ -474,6 +474,8 @@ namespace Durak
 
         private bool CanAttack(Card attackCard)
         {
+            return !played && boardDeck.Size % 2 == 0 && boardDeck.Size < 12;
+
             return (boardDeck.Size == 0 || boardDeck.ContainsNumber(attackCard.Number)) && !played && boardDeck.Size % 2 == 0 && boardDeck.Size < 12;
         }
 

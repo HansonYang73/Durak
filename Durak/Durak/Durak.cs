@@ -78,5 +78,10 @@ namespace Durak
         {
             return culture;
         }
+
+        private void Durak_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
