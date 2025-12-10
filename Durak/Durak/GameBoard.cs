@@ -211,6 +211,67 @@ namespace Durak
             {
                 numberOfCardsLabel.Text = "Cardes: " + deck.Size.ToString();
             }
+
+            if (deck.Size == 0)
+            {
+                string suitStr = Card.EmpSuit.ToString();
+                string culture = Durak.getCulture();
+
+                if (suitStr.Equals("Heart"))
+                {
+                    if (culture == "en-US")
+                        suitStr = "Heart";
+                    else if (culture == "fr-FR")
+                        suitStr = "Coeurs";
+                    else if (culture == "es-ES")
+                        suitStr = "Corazones";
+                }
+
+                else if (suitStr.Equals("Club"))
+                {
+                    if (culture == "en-US")
+                        suitStr = "Club";
+                    else if (culture == "fr-FR")
+                        suitStr = "Trèfles";
+                    else if (culture == "es-ES")
+                        suitStr = "Tréboles";
+                }
+
+                else if (suitStr.Equals("Spade"))
+                {
+                    if (culture == "en-US")
+                        suitStr = "Spade";
+                    else if (culture == "fr-FR")
+                        suitStr = "Piques";
+                    else if (culture == "es-ES")
+                        suitStr = "Espadas";
+                }
+
+                else if (suitStr.Equals("Diamond"))
+                {
+                    if (culture == "en-US")
+                        suitStr = "Diamond";
+                    else if (culture == "fr-FR")
+                        suitStr = "Carreaux";
+                    else if (culture == "es-ES")
+                        suitStr = "Diamantes";
+                }
+
+
+                if (Durak.getCulture() == "en-US")
+                {
+                    numberOfCardsLabel.Text = "Empowered Suit: " + suitStr;
+                }
+                else if (Durak.getCulture() == "fr-FR")
+                {
+                    numberOfCardsLabel.Text = "Couleur Puissant: " + suitStr;
+                }
+                else if (Durak.getCulture() == "es-ES")
+                {
+                    numberOfCardsLabel.Text = "Traje Potenciado: " + suitStr;
+                }
+            }
+
             StartTurn();
         }
 

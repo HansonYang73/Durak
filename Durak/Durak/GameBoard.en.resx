@@ -117,24 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="startButton.Text" xml:space="preserve">
-    <value>&amp;Jugar!</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Durak
- En línea</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Bienvenido a la aplicación en línea de Durak</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Haga clic en Jugar para comenzar.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+  <data name="numberOfCardsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1209, 205</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Idioma:</value>
+  <data name="numberOfCardsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 22</value>
+  </data>
+  <data name="numberOfCardsLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
 </root>
