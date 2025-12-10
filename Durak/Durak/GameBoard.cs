@@ -495,24 +495,6 @@ namespace Durak
             return canDefend && !played && boardDeck.Size % 2 == 1; 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (this.fightMode == "Attack")
-            {
-                this.fightMode = "Defend";
-            }
-            else if (this.fightMode == "Defend")
-            {
-                this.fightMode = "Attack";
-            }
-            Console.WriteLine(fightMode);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ClearBoard();
-        }
-
         private void ClearBoard()
         {
             attackingSlots.ForEach((picturebox) => picturebox.Image = null);
