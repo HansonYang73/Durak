@@ -113,7 +113,19 @@ namespace Durak
             fillBotDeck();
             fillDeck();
 
-            historyTextBox.AppendText("Turn " + turn + " (Attacker: You, Defender: Bot)" + Environment.NewLine);
+            if (Durak.getCulture() == "en-US")
+            {
+                historyTextBox.AppendText("Turn " + turn + " (Attacker: You, Defender: Bot)" + Environment.NewLine);
+            }
+            else if (Durak.getCulture() == "fr-FR")
+            {
+                historyTextBox.AppendText("Tour " + turn + " (Attaquant : Vous, Défenseur : Robot)" + Environment.NewLine);
+            }
+            else if (Durak.getCulture() == "es-ES")
+            {
+                historyTextBox.AppendText("Turn " + turn + " (Atacante: Tu, Defensor: Bot)" + Environment.NewLine);
+            }
+
 
         }
 
@@ -505,14 +517,40 @@ namespace Durak
                 if (boardDeck.Size == 0)
                 {
                     drawDecks();
-                    string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
-                    historyTextBox.AppendText(Environment.NewLine + "Turn " + turn + extraInfo + Environment.NewLine);
+                    if (Durak.getCulture() == "en-US")
+                    {
+                        string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
+                        historyTextBox.AppendText(Environment.NewLine + "Turn " + turn + extraInfo + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "fr-FR")
+                    {
+                        string extraInfo = !currentAttacker.isBot ? " (Attaquant : Vous, Défenseur : Robot)" : " (Attaquant : Robot, Défenseur : Vous)";
+                        historyTextBox.AppendText(Environment.NewLine + "Tour " + turn + extraInfo + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "es-ES")
+                    {
+                        string extraInfo = !currentAttacker.isBot ? " (Atacante: Tu, Defensor: Bot)" : " (Atacante: Bot, Defensor: Tu)";
+                        historyTextBox.AppendText(Environment.NewLine + "Turno " + turn + extraInfo + Environment.NewLine);
+                    }
                 }
                 else if (mainPlayer.Size >= 6)
                 {
                     drawDecks();
-                    string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
-                    historyTextBox.AppendText(Environment.NewLine + "Turn " + turn + extraInfo + Environment.NewLine);
+                    if (Durak.getCulture() == "en-US")
+                    {
+                        string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
+                        historyTextBox.AppendText(Environment.NewLine + "Turn " + turn + extraInfo + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "fr-FR")
+                    {
+                        string extraInfo = !currentAttacker.isBot ? " (Attaquant : Vous, Défenseur : Robot)" : " (Attaquant : Robot, Défenseur : Vous)";
+                        historyTextBox.AppendText(Environment.NewLine + "Tour " + turn + extraInfo + Environment.NewLine);
+                    }
+                    else if (Durak.getCulture() == "es-ES")
+                    {
+                        string extraInfo = !currentAttacker.isBot ? " (Atacante: Tu, Defensor: Bot)" : " (Atacante: Bot, Defensor: Tu)";
+                        historyTextBox.AppendText(Environment.NewLine + "Turno " + turn + extraInfo + Environment.NewLine);
+                    }
                 }
                 //endedTurn = false;
                 //botEndedTurn = false;

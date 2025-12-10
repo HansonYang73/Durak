@@ -46,23 +46,125 @@ namespace Durak
             string numStr = Number.ToString();
             if (Number == 11)
             {
-                numStr = "Jack";
+                if (Durak.getCulture() == "en-US")
+                {
+                    numStr = "Jack";
+                }
+                else if (Durak.getCulture() == "fr-FR")
+                {
+                    numStr = "Valet";
+                }
+                else if (Durak.getCulture() == "es-ES")
+                {
+                    numStr = "Jota";
+                }
 
             }
             else if (Number == 12)
             {
-                numStr = "Queen";
+                if (Durak.getCulture() == "en-US")
+                {
+                    numStr = "Queen";
+                }
+                else if (Durak.getCulture() == "fr-FR")
+                {
+                    numStr = "Dame";
+                }
+                else if (Durak.getCulture() == "es-ES")
+                {
+                    numStr = "Reina";
+                }
             }
             else if (Number == 13)
             {
-                numStr = "King";
+                if (Durak.getCulture() == "en-US")
+                {
+                    numStr = "King";
+                }
+                else if (Durak.getCulture() == "fr-FR")
+                {
+                    numStr = "Roi";
+                }
+                else if (Durak.getCulture() == "es-ES")
+                {
+                    numStr = "Rey";
+                }
             }
             else if (Number == 1)
             {
-                numStr = "Ace";
+                if (Durak.getCulture() == "en-US")
+                {
+                    numStr = "Ace";
+                }
+                else if (Durak.getCulture() == "fr-FR")
+                {
+                    numStr = "As";
+                }
+                else if (Durak.getCulture() == "es-ES")
+                {
+                    numStr = "As";
+                }
             }
 
-            return numStr + " of " + Suit + "s";
+
+
+
+            string suitStr = Suit.ToString();
+            string culture = Durak.getCulture();
+
+            if (suitStr == "Heart")
+            {
+                if (culture == "en-US")
+                    suitStr = "Heart";
+                else if (culture == "fr-FR")
+                    suitStr = "Coeurs";
+                else if (culture == "es-ES")
+                    suitStr = "Corazones";
+            }
+
+            else if (suitStr == "Clubs")
+            {
+                if (culture == "en-US")
+                    suitStr = "Clubs";
+                else if (culture == "fr-FR")
+                    suitStr = "Trèfles";
+                else if (culture == "es-ES")
+                    suitStr = "Tréboles";
+            }
+
+            else if (suitStr == "Spades")
+            {
+                if (culture == "en-US")
+                    suitStr = "Spades";
+                else if (culture == "fr-FR")
+                    suitStr = "Piques";
+                else if (culture == "es-ES")
+                    suitStr = "Espadas";
+            }
+
+            else if (suitStr == "Diamonds")
+            {
+                if (culture == "en-US")
+                    suitStr = "Diamonds";
+                else if (culture == "fr-FR")
+                    suitStr = "Carreaux";
+                else if (culture == "es-ES")
+                    suitStr = "Diamantes";
+            }
+
+            if (Durak.getCulture() == "en-US")
+            {
+                return numStr + " of " + suitStr + "s";
+            }
+            else if (Durak.getCulture() == "fr-FR")
+            {
+                return numStr + " des " + suitStr;
+            }
+            else if (Durak.getCulture() == "es-ES")
+            {
+                numStr = "El Rey";
+            }
+            return numStr + " de " + suitStr + "s";
 
             
         }
