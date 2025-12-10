@@ -526,6 +526,7 @@ namespace Durak
 
         private async Task StartTurn()
         {
+            Console.WriteLine("Hello");
             while (!endedTurn || !botEndedTurn)
             {
                 await WaitForAttacker();
