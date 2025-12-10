@@ -97,7 +97,7 @@
             // 
             this.mainDeck.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mainDeck.Image = global::Durak.Properties.Resources.back;
-            this.mainDeck.Location = new System.Drawing.Point(1141, 229);
+            this.mainDeck.Location = new System.Drawing.Point(1263, 230);
             this.mainDeck.Name = "mainDeck";
             this.mainDeck.Size = new System.Drawing.Size(116, 162);
             this.mainDeck.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,7 +109,7 @@
             // 
             // card1
             // 
-            this.card1.Location = new System.Drawing.Point(328, 567);
+            this.card1.Location = new System.Drawing.Point(450, 568);
             this.card1.Name = "card1";
             this.card1.Size = new System.Drawing.Size(103, 163);
             this.card1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -119,7 +119,7 @@
             // 
             // card2
             // 
-            this.card2.Location = new System.Drawing.Point(437, 567);
+            this.card2.Location = new System.Drawing.Point(559, 568);
             this.card2.Name = "card2";
             this.card2.Size = new System.Drawing.Size(103, 163);
             this.card2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -129,7 +129,7 @@
             // 
             // card3
             // 
-            this.card3.Location = new System.Drawing.Point(546, 567);
+            this.card3.Location = new System.Drawing.Point(668, 568);
             this.card3.Name = "card3";
             this.card3.Size = new System.Drawing.Size(103, 163);
             this.card3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -139,7 +139,7 @@
             // 
             // card4
             // 
-            this.card4.Location = new System.Drawing.Point(655, 567);
+            this.card4.Location = new System.Drawing.Point(777, 568);
             this.card4.Name = "card4";
             this.card4.Size = new System.Drawing.Size(103, 163);
             this.card4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -149,7 +149,7 @@
             // 
             // card5
             // 
-            this.card5.Location = new System.Drawing.Point(764, 567);
+            this.card5.Location = new System.Drawing.Point(886, 568);
             this.card5.Name = "card5";
             this.card5.Size = new System.Drawing.Size(103, 163);
             this.card5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -159,7 +159,7 @@
             // 
             // card6
             // 
-            this.card6.Location = new System.Drawing.Point(873, 567);
+            this.card6.Location = new System.Drawing.Point(995, 568);
             this.card6.Name = "card6";
             this.card6.Size = new System.Drawing.Size(103, 163);
             this.card6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -170,7 +170,7 @@
             // empowerCard
             // 
             this.empowerCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.empowerCard.Location = new System.Drawing.Point(1056, 219);
+            this.empowerCard.Location = new System.Drawing.Point(1178, 220);
             this.empowerCard.Name = "empowerCard";
             this.empowerCard.Size = new System.Drawing.Size(130, 182);
             this.empowerCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -180,17 +180,18 @@
             // 
             // historyTextBox
             // 
+            this.historyTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.historyTextBox.Location = new System.Drawing.Point(12, 12);
             this.historyTextBox.Multiline = true;
             this.historyTextBox.Name = "historyTextBox";
             this.historyTextBox.ReadOnly = true;
             this.historyTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.historyTextBox.Size = new System.Drawing.Size(216, 718);
+            this.historyTextBox.Size = new System.Drawing.Size(351, 718);
             this.historyTextBox.TabIndex = 15;
             // 
             // cardAttack1
             // 
-            this.cardAttack1.Location = new System.Drawing.Point(328, 276);
+            this.cardAttack1.Location = new System.Drawing.Point(450, 277);
             this.cardAttack1.Name = "cardAttack1";
             this.cardAttack1.Size = new System.Drawing.Size(103, 163);
             this.cardAttack1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -199,7 +200,7 @@
             // 
             // cardAttack2
             // 
-            this.cardAttack2.Location = new System.Drawing.Point(437, 276);
+            this.cardAttack2.Location = new System.Drawing.Point(559, 277);
             this.cardAttack2.Name = "cardAttack2";
             this.cardAttack2.Size = new System.Drawing.Size(103, 163);
             this.cardAttack2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -208,7 +209,7 @@
             // 
             // cardAttack3
             // 
-            this.cardAttack3.Location = new System.Drawing.Point(546, 276);
+            this.cardAttack3.Location = new System.Drawing.Point(668, 277);
             this.cardAttack3.Name = "cardAttack3";
             this.cardAttack3.Size = new System.Drawing.Size(103, 163);
             this.cardAttack3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,7 +218,7 @@
             // 
             // cardAttack4
             // 
-            this.cardAttack4.Location = new System.Drawing.Point(655, 276);
+            this.cardAttack4.Location = new System.Drawing.Point(777, 277);
             this.cardAttack4.Name = "cardAttack4";
             this.cardAttack4.Size = new System.Drawing.Size(103, 163);
             this.cardAttack4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -226,7 +227,7 @@
             // 
             // cardAttack5
             // 
-            this.cardAttack5.Location = new System.Drawing.Point(764, 276);
+            this.cardAttack5.Location = new System.Drawing.Point(886, 277);
             this.cardAttack5.Name = "cardAttack5";
             this.cardAttack5.Size = new System.Drawing.Size(103, 163);
             this.cardAttack5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -235,7 +236,7 @@
             // 
             // cardAttack6
             // 
-            this.cardAttack6.Location = new System.Drawing.Point(873, 276);
+            this.cardAttack6.Location = new System.Drawing.Point(995, 277);
             this.cardAttack6.Name = "cardAttack6";
             this.cardAttack6.Size = new System.Drawing.Size(103, 163);
             this.cardAttack6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -244,7 +245,7 @@
             // 
             // cardDefend1
             // 
-            this.cardDefend1.Location = new System.Drawing.Point(328, 333);
+            this.cardDefend1.Location = new System.Drawing.Point(450, 334);
             this.cardDefend1.Margin = new System.Windows.Forms.Padding(0);
             this.cardDefend1.Name = "cardDefend1";
             this.cardDefend1.Padding = new System.Windows.Forms.Padding(3);
@@ -256,7 +257,7 @@
             // 
             // cardDefend2
             // 
-            this.cardDefend2.Location = new System.Drawing.Point(437, 333);
+            this.cardDefend2.Location = new System.Drawing.Point(559, 334);
             this.cardDefend2.Name = "cardDefend2";
             this.cardDefend2.Size = new System.Drawing.Size(103, 163);
             this.cardDefend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -266,7 +267,7 @@
             // 
             // cardDefend3
             // 
-            this.cardDefend3.Location = new System.Drawing.Point(546, 333);
+            this.cardDefend3.Location = new System.Drawing.Point(668, 334);
             this.cardDefend3.Name = "cardDefend3";
             this.cardDefend3.Size = new System.Drawing.Size(103, 163);
             this.cardDefend3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -276,7 +277,7 @@
             // 
             // cardDefend4
             // 
-            this.cardDefend4.Location = new System.Drawing.Point(655, 333);
+            this.cardDefend4.Location = new System.Drawing.Point(777, 334);
             this.cardDefend4.Name = "cardDefend4";
             this.cardDefend4.Size = new System.Drawing.Size(103, 163);
             this.cardDefend4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -286,7 +287,7 @@
             // 
             // cardDefend5
             // 
-            this.cardDefend5.Location = new System.Drawing.Point(764, 333);
+            this.cardDefend5.Location = new System.Drawing.Point(886, 334);
             this.cardDefend5.Name = "cardDefend5";
             this.cardDefend5.Size = new System.Drawing.Size(103, 163);
             this.cardDefend5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -296,7 +297,7 @@
             // 
             // cardDefend6
             // 
-            this.cardDefend6.Location = new System.Drawing.Point(873, 333);
+            this.cardDefend6.Location = new System.Drawing.Point(995, 334);
             this.cardDefend6.Name = "cardDefend6";
             this.cardDefend6.Size = new System.Drawing.Size(103, 163);
             this.cardDefend6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -306,7 +307,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1145, 105);
+            this.button1.Location = new System.Drawing.Point(1267, 106);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 31);
             this.button1.TabIndex = 28;
@@ -316,7 +317,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1145, 152);
+            this.button2.Location = new System.Drawing.Point(1267, 153);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 29;
@@ -326,7 +327,7 @@
             // 
             // endTurnButton
             // 
-            this.endTurnButton.Location = new System.Drawing.Point(1168, 567);
+            this.endTurnButton.Location = new System.Drawing.Point(1290, 568);
             this.endTurnButton.Name = "endTurnButton";
             this.endTurnButton.Size = new System.Drawing.Size(89, 38);
             this.endTurnButton.TabIndex = 30;
@@ -339,10 +340,10 @@
             this.sortingComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sortingComboBox.FormattingEnabled = true;
             this.sortingComboBox.Items.AddRange(new object[] {
-    "Sort By Power",
-    "Sort By Suit",
-    "Sort By Number"});
-            this.sortingComboBox.Location = new System.Drawing.Point(1099, 486);
+            "Sort By Power",
+            "Sort By Suit",
+            "Sort By Number"});
+            this.sortingComboBox.Location = new System.Drawing.Point(1221, 487);
             this.sortingComboBox.Name = "sortingComboBox";
             this.sortingComboBox.Size = new System.Drawing.Size(121, 21);
             this.sortingComboBox.TabIndex = 31;
@@ -351,7 +352,7 @@
             // waitingLabel
             // 
             this.waitingLabel.AutoSize = true;
-            this.waitingLabel.Location = new System.Drawing.Point(1074, 15);
+            this.waitingLabel.Location = new System.Drawing.Point(1196, 16);
             this.waitingLabel.Name = "waitingLabel";
             this.waitingLabel.Size = new System.Drawing.Size(150, 13);
             this.waitingLabel.TabIndex = 32;
@@ -365,7 +366,7 @@
             // 
             // botCard1
             // 
-            this.botCard1.Location = new System.Drawing.Point(328, 12);
+            this.botCard1.Location = new System.Drawing.Point(450, 13);
             this.botCard1.Name = "botCard1";
             this.botCard1.Size = new System.Drawing.Size(103, 163);
             this.botCard1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -374,7 +375,7 @@
             // 
             // botCard2
             // 
-            this.botCard2.Location = new System.Drawing.Point(437, 12);
+            this.botCard2.Location = new System.Drawing.Point(559, 13);
             this.botCard2.Name = "botCard2";
             this.botCard2.Size = new System.Drawing.Size(103, 163);
             this.botCard2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -383,7 +384,7 @@
             // 
             // botCard3
             // 
-            this.botCard3.Location = new System.Drawing.Point(546, 12);
+            this.botCard3.Location = new System.Drawing.Point(668, 13);
             this.botCard3.Name = "botCard3";
             this.botCard3.Size = new System.Drawing.Size(103, 163);
             this.botCard3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -392,7 +393,7 @@
             // 
             // botCard4
             // 
-            this.botCard4.Location = new System.Drawing.Point(655, 12);
+            this.botCard4.Location = new System.Drawing.Point(777, 13);
             this.botCard4.Name = "botCard4";
             this.botCard4.Size = new System.Drawing.Size(103, 163);
             this.botCard4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -401,7 +402,7 @@
             // 
             // botCard5
             // 
-            this.botCard5.Location = new System.Drawing.Point(764, 12);
+            this.botCard5.Location = new System.Drawing.Point(886, 13);
             this.botCard5.Name = "botCard5";
             this.botCard5.Size = new System.Drawing.Size(103, 163);
             this.botCard5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -410,7 +411,7 @@
             // 
             // botCard6
             // 
-            this.botCard6.Location = new System.Drawing.Point(873, 12);
+            this.botCard6.Location = new System.Drawing.Point(995, 13);
             this.botCard6.Name = "botCard6";
             this.botCard6.Size = new System.Drawing.Size(103, 163);
             this.botCard6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -419,7 +420,7 @@
             // 
             // extraBotCards
             // 
-            this.extraBotCards.Location = new System.Drawing.Point(982, 15);
+            this.extraBotCards.Location = new System.Drawing.Point(1104, 16);
             this.extraBotCards.Name = "extraBotCards";
             this.extraBotCards.Size = new System.Drawing.Size(86, 90);
             this.extraBotCards.TabIndex = 39;
@@ -427,7 +428,7 @@
             // nextCard
             // 
             this.nextCard.Enabled = false;
-            this.nextCard.Location = new System.Drawing.Point(982, 707);
+            this.nextCard.Location = new System.Drawing.Point(1104, 708);
             this.nextCard.Name = "nextCard";
             this.nextCard.Size = new System.Drawing.Size(75, 23);
             this.nextCard.TabIndex = 40;
@@ -438,7 +439,7 @@
             // goBack
             // 
             this.goBack.Enabled = false;
-            this.goBack.Location = new System.Drawing.Point(247, 707);
+            this.goBack.Location = new System.Drawing.Point(369, 708);
             this.goBack.Name = "goBack";
             this.goBack.Size = new System.Drawing.Size(75, 23);
             this.goBack.TabIndex = 41;
@@ -450,7 +451,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1269, 742);
+            this.ClientSize = new System.Drawing.Size(1414, 742);
             this.Controls.Add(this.goBack);
             this.Controls.Add(this.nextCard);
             this.Controls.Add(this.extraBotCards);

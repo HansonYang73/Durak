@@ -115,6 +115,8 @@ namespace Durak
             fillBotDeck();
             fillDeck();
 
+            historyTextBox.AppendText("Turn" + turn + " (Attacker: You, Defender: Bot)" + Environment.NewLine);
+
 
             StartTurn();
         }
@@ -131,10 +133,16 @@ namespace Durak
 
         private void mainDeck_Click(object sender, EventArgs e)
         {
-            if (endedTurn)
+            if (endedTurn && botEndedTurn)
             {
                 drawDecks();
+                fillBotDeck();
                 fillDeck();
+
+                string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
+                historyTextBox.AppendText("Turn" + turn + extraInfo + Environment.NewLine);
+
+                StartTurn();
             }
         }
 
@@ -156,7 +164,7 @@ namespace Durak
 
         private void drawDecks()
         {
-            foreach (Deck deck in new List<Deck> {currentAttacker, currentDefender })
+            foreach (Deck deck in new List<Deck> {currentAttacker, currentDefender})
             {
                 while (deck.Size < 6 && this.deck.Size > 0)
                 {
@@ -192,8 +200,10 @@ namespace Durak
             {
                 int extraCards = botPlayer.Size - 6;
                 extraBotCards.Text = $"+{extraCards} Cards";
-
-
+            }
+            else
+            {
+                extraBotCards.Text = "";
             }
 
 
@@ -265,7 +275,8 @@ namespace Durak
                 attackOrDefend(card, cardInd);
             }
 
-            Console.WriteLine(mainPlayer.Size);
+            Console.WriteLine("Player Size: " + mainPlayer.Size);
+            Console.WriteLine("Bot Size: " + botPlayer.Size);
             fillDeck();
         }
         private void attackOrDefend(PictureBox card, int i)
@@ -279,6 +290,7 @@ namespace Durak
                     attack(card);
                     // adds the card to the decks
                     boardDeck.AddCard(mainPlayer.Play(i));
+                    historyTextBox.AppendText($"You have attacked with {playCard.ToString()}" + Environment.NewLine);
 
                     played = true;
                 }
@@ -290,6 +302,8 @@ namespace Durak
                     defend(card);
 
                     boardDeck.AddCard(mainPlayer.Play(i));
+                    historyTextBox.AppendText($"You have defended with {playCard.ToString()}" + Environment.NewLine);
+
                     played = true;
                 }
             }
@@ -350,7 +364,7 @@ namespace Durak
                 canDefend = true; 
             }
 
-            return canDefend && !played; // change true to canDefend2 bool variable
+            return canDefend && !played && boardDeck.Size % 2 == 1; 
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -387,10 +401,13 @@ namespace Durak
         private void empowerCard_Click(object sender, EventArgs e)
         {
             //pickUpLastEmpoweredCard();
-            if (endedTurn)
+            if (endedTurn && botEndedTurn)
             {
                 drawDecks();
+                fillBotDeck();
                 fillDeck();
+
+                StartTurn();
             }
         }
 
@@ -406,13 +423,21 @@ namespace Durak
 
         private void endTurnButton_Click(object sender, EventArgs e)
         {
+            historyTextBox.AppendText("You have ended your turn" + Environment.NewLine);
             endedTurn = true;
             // deal with bots attack and user defend and user attack
+            EndTurn();
+        }
+
+        private void EndTurn()
+        {
             if (endedTurn && botEndedTurn)
             {
                 if (boardDeck.Size % 2 == 1)
                 {
                     currentDefender.AddDeck(boardDeck);
+                    fillBotDeck();
+                    fillDeck();
                 }
                 else
                 {
@@ -423,10 +448,19 @@ namespace Durak
                     fightMode = fightMode == "Attack" ? "Defend" : "Attack";
                 }
 
+                if (currentAttacker == mainPlayer)
+                {
+                    played = false;
+                }
+                else
+                {
+                    played = true;
+                }
+
                 ClearBoard();
                 turn++;
 
-                StartTurn();
+                historyTextBox.AppendText(Environment.NewLine + "Click the deck to draw the cards!" + Environment.NewLine + Environment.NewLine);
             }
         }
 
@@ -475,7 +509,10 @@ namespace Durak
                 Console.WriteLine("player played");
                 await WaitForDefender();
                 Console.WriteLine("bot played");
+
+                Console.WriteLine(endedTurn + " and " + botEndedTurn);
             }
+            EndTurn();
         }
 
         private async Task WaitForAttacker()
@@ -493,6 +530,10 @@ namespace Durak
                 Card attackCard = currentAttacker.bot.Attack(boardDeck, deck);
                 if (attackCard != null)
                 {
+                    historyTextBox.AppendText("Bot has attacked with a " + attackCard.ToString() + Environment.NewLine);
+
+                    endedTurn = false; // you would need to end turn again
+
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(attackCard.CardImg);
 
@@ -506,7 +547,8 @@ namespace Durak
                 else
                 {
                     botEndedTurn = true;
-                    MessageBox.Show("Bot ended their turn");
+                    historyTextBox.AppendText("Bot has ended their turn" + Environment.NewLine);
+
                 }
 
                 played = false;
@@ -530,6 +572,8 @@ namespace Durak
 
                 if (defendCard != null)
                 {
+                    historyTextBox.AppendText("Bot has defended with a " + defendCard.ToString() + Environment.NewLine);
+
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(defendCard.CardImg);
 
@@ -540,15 +584,16 @@ namespace Durak
                     // refresh bot deck
 
                     fillBotDeck();
+
+                    endedTurn = false;
                 }
                 else
                 {
                     botEndedTurn = true;
-                    MessageBox.Show("Bot ended their turn");
+                    historyTextBox.AppendText("Bot has ended their turn" + Environment.NewLine);
                 }
 
                 played = false;
-                endedTurn = false;
             }
         }
 

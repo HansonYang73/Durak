@@ -43,7 +43,31 @@ namespace Durak
 
         public override String ToString()
         {
-            return Number + " of " + Suit + " Power: " + Power;
+            if (Number == 11)
+            {
+                return "Jack" + " of " + Suit + "s";
+
+            }
+            else if (Number == 12)
+            {
+                return "Queen" + " of " + Suit + "s";
+
+            }
+            else if (Number == 13)
+            {
+                return "King" + " of " + Suit + "s";
+
+            }
+            else if (Number == 1)
+            {
+                return "Ace" + " of " + Suit + "s";
+
+            }
+            else
+            {
+                return Number + " of " + Suit + "s";
+
+            }
         }
     }
 }
