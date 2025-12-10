@@ -57,10 +57,6 @@ namespace Durak
             {
                 bot = new Bot(this);
             }
-            //for (int i = 0; i < 6; i++)
-            //{
-            //    AddCard(mainDeck.Draw());
-            //}
         }
 
         private void Shuffle()

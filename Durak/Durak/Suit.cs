@@ -8,7 +8,7 @@ namespace Durak
 {
     internal enum Suit
     {
-        Club, // (Suit) 0 -> Suit.Heart
+        Club, // (Suit) 0 -> Suit.Club
         Diamond,
         Heart,
         Spade

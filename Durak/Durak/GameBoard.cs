@@ -71,9 +71,6 @@ namespace Durak
 
         private bool played;
 
-        private int attacksThisRound;
-        private const int maxAttacksPerTurn = 6;
-        //private bool allowCardPlay;
         private bool endedTurn;
         private bool botEndedTurn;
 
@@ -162,8 +159,6 @@ namespace Durak
                 string extraInfo = !currentAttacker.isBot ? " (Atacante: Tu, Defensor: Bot)" : " (Atacante: Bot, Defensor: Tu)";
                     historyTextBox.AppendText("Turno " + turn + extraInfo + Environment.NewLine);
                 }
-
-                //StartTurn();
             }
         }
 
@@ -317,7 +312,7 @@ namespace Durak
 
         }
 
-        private void fillDeck()//add paramater later
+        private void fillDeck()
         {
             int size = 0;
 
@@ -482,7 +477,7 @@ namespace Durak
 
         private bool CanAttack(Card attackCard)
         {
-            return (boardDeck.Size == 0 || boardDeck.ContainsNumber(attackCard.Number)) && !played && boardDeck.Size % 2 == 0 && boardDeck.Size < 12; // change true to canAttack bool variable
+            return (boardDeck.Size == 0 || boardDeck.ContainsNumber(attackCard.Number)) && !played && boardDeck.Size % 2 == 0 && boardDeck.Size < 12;
         }
 
         private bool CanDefend(Card card)
@@ -599,11 +594,6 @@ namespace Durak
                 }
                 endedTurn = true;
             }
-            // deal with bots attack and user defend and user attack
-            //if (boardDeck.Size > 0)
-            //{
-            //    EndTurn();
-            //}
         }
 
         private void EndTurn()
@@ -636,7 +626,7 @@ namespace Durak
                     played = true;
                 }
 
-                ClearBoard();
+                
                 turn++;
 
 
@@ -678,8 +668,10 @@ namespace Durak
                         historyTextBox.AppendText(Environment.NewLine + "Turno " + turn + extraInfo + Environment.NewLine);
                     }
                 }
-                //endedTurn = false;
-                //botEndedTurn = false;
+
+                ClearBoard();
+
+
                 fillBotDeck();
                 fillDeck();
 
@@ -809,8 +801,8 @@ namespace Durak
                     attack(pictureBox);
 
                     boardDeck.AddCard(attackCard);
+                    
                     // refresh bot deck
-
                     fillBotDeck();
                 }
                 else
@@ -830,8 +822,6 @@ namespace Durak
                     }
 
                 }
-
-                //played = false;
 
                 if (deck.Size == 0 && (mainPlayer.Size == 0 || botPlayer.Size == 0))
                 {
@@ -878,7 +868,6 @@ namespace Durak
                     boardDeck.AddCard(defendCard);
 
                     // refresh bot deck
-
                     fillBotDeck();
 
                     endedTurn = false;

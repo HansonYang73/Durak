@@ -154,7 +154,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Durak";
-            this.Load += new System.EventHandler(this.durakForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -27,10 +27,6 @@ namespace Durak
             playerCount = 2;
         }
 
-        private void durakForm_Load(object sender, EventArgs e)
-        {
-            //op1ComboBox.SelectedIndex = 0;
-        }
         private void ChangeLanguage(string culture)
         {
             isChangingLanguage = true;
@@ -54,8 +50,6 @@ namespace Durak
 
             Hide();
             new GameBoard(playerCount).Show();
-            // need to add more code
-            // not sure about the variable players and playercount being in this form
         }
 
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
