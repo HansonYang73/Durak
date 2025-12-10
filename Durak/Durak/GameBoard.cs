@@ -617,7 +617,7 @@ namespace Durak
                 else
                 {
                     botEndedTurn = true;
-                    historyTextBox.AppendText("Bot has ended their turn ATTACK" + Environment.NewLine);
+                    historyTextBox.AppendText("Bot has ended their turn" + Environment.NewLine);
 
                 }
 
@@ -669,7 +669,7 @@ namespace Durak
                     {
                         endedTurn = true;
                     }
-                    historyTextBox.AppendText("Bot has ended their turn DEFEND" + Environment.NewLine);
+                    historyTextBox.AppendText("Bot has ended their turn" + Environment.NewLine);
                 }
 
                 played = false;

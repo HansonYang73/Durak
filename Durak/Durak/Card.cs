@@ -43,31 +43,28 @@ namespace Durak
 
         public override String ToString()
         {
+            string numStr = Number.ToString();
             if (Number == 11)
             {
-                return "Jack" + " of " + Suit + "s";
+                numStr = "Jack";
 
             }
             else if (Number == 12)
             {
-                return "Queen" + " of " + Suit + "s";
-
+                numStr = "Queen";
             }
             else if (Number == 13)
             {
-                return "King" + " of " + Suit + "s";
-
+                numStr = "King";
             }
             else if (Number == 1)
             {
-                return "Ace" + " of " + Suit + "s";
-
+                numStr = "Ace";
             }
-            else
-            {
-                return Number + " of " + Suit + "s";
 
-            }
+            return numStr + " of " + Suit + "s";
+
+            
         }
     }
 }
