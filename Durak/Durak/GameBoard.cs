@@ -533,9 +533,10 @@ namespace Durak
         {
             while (!endedTurn || !botEndedTurn)
             {
-                Console.WriteLine($"\nhas played:{played} and has ended:{endedTurn}\n");
                 await WaitForAttacker();
+                Console.WriteLine($"\nAFTER ATTACK: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
                 await WaitForDefender();
+                Console.WriteLine($"\nAFTER DEFEND: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
 
                 if (boardDeck.Size > 0)
                 {
@@ -555,6 +556,7 @@ namespace Durak
             }
             else
             {
+                played = false;
                 await Task.Delay(1000);
                 Card attackCard = currentAttacker.bot.Attack(boardDeck, deck);
                 if (attackCard != null && boardDeck.Size % 2 == 0)
@@ -578,7 +580,7 @@ namespace Durak
 
                 }
 
-                played = false;
+                //played = false;
             }
         }
 
