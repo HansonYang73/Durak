@@ -477,15 +477,17 @@ namespace Durak
                 if (mainPlayer.Size >= 6)
                 {
                     drawDecks();
-                    fillBotDeck();
-                    fillDeck();
-
-                    string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
-                    historyTextBox.AppendText(Environment.NewLine + "Turn " + turn + extraInfo + Environment.NewLine);
-
-                    StartTurn();
                 }
-                else if (deck.Size > 0) 
+                endedTurn = false;
+                botEndedTurn = false;
+                fillBotDeck();
+                fillDeck();
+
+                string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
+                historyTextBox.AppendText(Environment.NewLine + "Turn " + turn + extraInfo + Environment.NewLine);
+
+                StartTurn();
+                if (deck.Size > 0) 
                 {
                     historyTextBox.AppendText(Environment.NewLine + "Click the deck to draw the cards!" + Environment.NewLine + Environment.NewLine);
                 }
@@ -533,10 +535,16 @@ namespace Durak
         {
             while (!endedTurn || !botEndedTurn)
             {
-                await WaitForAttacker();
-                Console.WriteLine($"\nAFTER ATTACK: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
-                await WaitForDefender();
-                Console.WriteLine($"\nAFTER DEFEND: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
+                if (!botEndedTurn || !endedTurn)
+                {
+                    await WaitForAttacker();
+                    Console.WriteLine($"\nAFTER ATTACK: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
+                }
+                if (!botEndedTurn || !endedTurn)
+                {
+                    await WaitForDefender();
+                    Console.WriteLine($"\nAFTER DEFEND: has played:{played} and player has ended:{endedTurn} and bot has ended:{botEndedTurn}\n");
+                }
 
                 if (boardDeck.Size > 0)
                 {

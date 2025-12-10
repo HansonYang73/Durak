@@ -44,6 +44,7 @@ namespace Durak
                 {
                     return MainDeck.Play(attackingDeck.Get(0));
                 }
+                return MainDeck.Play(attackingDeck.Get(0));
             }
 
             return null;
