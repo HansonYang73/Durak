@@ -613,7 +613,6 @@ namespace Durak
                 else
                 {
                     botEndedTurn = true;
-                    endedTurn = true;
                     historyTextBox.AppendText("Bot has ended their turn" + Environment.NewLine);
                 }
 
