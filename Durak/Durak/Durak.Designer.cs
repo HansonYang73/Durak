@@ -153,6 +153,8 @@
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Durak";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Durak_FormClosed);
             this.ResumeLayout(false);

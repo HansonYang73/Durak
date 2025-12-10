@@ -403,6 +403,8 @@
             this.Controls.Add(this.cardAttack5);
             this.Controls.Add(this.cardAttack6);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "GameBoard";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameBoard_FormClosed);
             this.Load += new System.EventHandler(this.GameBoard_Load);
