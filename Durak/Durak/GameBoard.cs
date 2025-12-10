@@ -352,11 +352,16 @@ namespace Durak
 
         private bool CanAttack(Card attackCard)
         {
-            return (boardDeck.Size == 0 || boardDeck.ContainsNumber(attackCard.Number)) && !played; // change true to canAttack bool variable
+            return (boardDeck.Size == 0 || boardDeck.ContainsNumber(attackCard.Number)) && !played && boardDeck.Size % 2 == 0; // change true to canAttack bool variable
         }
 
         private bool CanDefend(Card card)
         {
+            if (boardDeck.Size % 2 == 0)
+            {
+                return false;
+            }
+
             bool canDefend = false;
             Card attackingCard = boardDeck.Get(boardDeck.Size - 1);
 
@@ -526,16 +531,16 @@ namespace Durak
 
         private async Task StartTurn()
         {
-            Console.WriteLine("Hello");
             while (!endedTurn || !botEndedTurn)
             {
+                Console.WriteLine("\nYOOOOOO\n");
                 await WaitForAttacker();
                 await WaitForDefender();
 
-            }
-            if (boardDeck.Size > 0)
-            {
-                EndTurn();
+                if (boardDeck.Size > 0)
+                {
+                    EndTurn();
+                }
             }
         }
 
@@ -611,6 +616,10 @@ namespace Durak
                 else
                 {
                     botEndedTurn = true;
+                    if (boardDeck.Size % 2 == 1)
+                    {
+                        endedTurn = true;
+                    }
                     historyTextBox.AppendText("Bot has ended their turn DEFEND" + Environment.NewLine);
                 }
 
