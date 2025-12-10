@@ -17,7 +17,7 @@ namespace Durak
     public partial class Durak : Form
     {
         private int playerCount;
-        private String culture;
+        private static String culture;
         private bool isChangingLanguage = false;
 
         public Durak()
@@ -78,12 +78,11 @@ namespace Durak
                 culture = "es-ES";
                 ChangeLanguage(culture);
                 label9.Font = new Font(label9.Font.FontFamily, 24, FontStyle.Bold);
-                
-
-
-
-
             }
+        }
+        public static String getCulture()
+        {
+            return culture;
         }
     }
 }

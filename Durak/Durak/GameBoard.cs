@@ -135,8 +135,21 @@ namespace Durak
                 fillBotDeck();
                 fillDeck();
 
+                if(Durak.getCulture() == "en-US")
+                {
                 string extraInfo = !currentAttacker.isBot ? " (Attacker: You, Defender: Bot)" : " (Attacker: Bot, Defender: You)";
-                historyTextBox.AppendText("Turn " + turn + extraInfo + Environment.NewLine);
+                    historyTextBox.AppendText("Turn " + turn + extraInfo + Environment.NewLine);
+                }
+                else if (Durak.getCulture() == "fr-FR")
+                {
+                string extraInfo = !currentAttacker.isBot ? " (Attaquant : Vous, Défenseur : Robot)" : " (Attaquant : Robot, Défenseur : Vous)";
+                    historyTextBox.AppendText("Tour " + turn + extraInfo + Environment.NewLine);
+                }
+                else if (Durak.getCulture() == "es-ES")
+                {
+                string extraInfo = !currentAttacker.isBot ? " (Atacante: Tu, Defensor: Bot)" : " (Atacante: Bot, Defensor: Tu)";
+                    historyTextBox.AppendText("Turno " + turn + extraInfo + Environment.NewLine);
+                }
 
                 //StartTurn();
             }
