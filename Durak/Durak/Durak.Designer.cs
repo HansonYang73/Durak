@@ -39,6 +39,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.languageComboBox = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // startButton
@@ -136,6 +138,7 @@
             // 
             // label10
             // 
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.ForeColor = System.Drawing.SystemColors.Control;
             this.label10.Location = new System.Drawing.Point(255, 304);
             this.label10.Name = "label10";
@@ -144,12 +147,38 @@
             this.label10.Text = "Click Play to Get Started";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // languageComboBox
+            // 
+            this.languageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.languageComboBox.FormattingEnabled = true;
+            this.languageComboBox.Items.AddRange(new object[] {
+            "English",
+            "Français",
+            "Español"});
+            this.languageComboBox.Location = new System.Drawing.Point(509, 185);
+            this.languageComboBox.Name = "languageComboBox";
+            this.languageComboBox.Size = new System.Drawing.Size(121, 21);
+            this.languageComboBox.TabIndex = 19;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(506, 169);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(58, 13);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Language:";
+            // 
             // Durak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Durak.Properties.Resources.CardTableBackground;
             this.ClientSize = new System.Drawing.Size(642, 359);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -165,6 +194,7 @@
             this.Text = "Durak";
             this.Load += new System.EventHandler(this.durakForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -180,6 +210,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox languageComboBox;
+        private System.Windows.Forms.Label label11;
     }
 }
 

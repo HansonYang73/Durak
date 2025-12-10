@@ -17,7 +17,7 @@ namespace Durak
         public Durak()
         {
             InitializeComponent();
-            label10.BackColor = Color.Transparent;
+            languageComboBox.SelectedIndex = 0;
             playerCount = 2;
         }
 
