@@ -424,10 +424,16 @@ namespace Durak
 
         private void endTurnButton_Click(object sender, EventArgs e)
         {
-            historyTextBox.AppendText("You have ended your turn" + Environment.NewLine);
-            endedTurn = true;
+            if (!endedTurn)
+            {
+                historyTextBox.AppendText("You have ended your turn" + Environment.NewLine);
+                endedTurn = true;
+            }
             // deal with bots attack and user defend and user attack
-            EndTurn();
+            if (boardDeck.Size > 0)
+            {
+                EndTurn();
+            }
         }
 
         private void EndTurn()
@@ -447,6 +453,8 @@ namespace Durak
                     currentDefender = temp;
 
                     fightMode = fightMode == "Attack" ? "Defend" : "Attack";
+
+                    Console.WriteLine("Current Attacker is player?: " + (currentAttacker == mainPlayer));
                 }
 
                 if (currentAttacker == mainPlayer)
@@ -527,7 +535,10 @@ namespace Durak
 
                 Console.WriteLine(endedTurn + " and " + botEndedTurn);
             }
-            EndTurn();
+            if (boardDeck.Size > 0)
+            {
+                EndTurn();
+            }
         }
 
         private async Task WaitForAttacker()
@@ -546,8 +557,6 @@ namespace Durak
                 if (attackCard != null)
                 {
                     historyTextBox.AppendText("Bot has attacked with a " + attackCard.ToString() + Environment.NewLine);
-
-                    endedTurn = false; // you would need to end turn again
 
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject(attackCard.CardImg);
@@ -604,6 +613,7 @@ namespace Durak
                 else
                 {
                     botEndedTurn = true;
+                    endedTurn = true;
                     historyTextBox.AppendText("Bot has ended their turn" + Environment.NewLine);
                 }
 
@@ -621,7 +631,6 @@ namespace Durak
         {
             page--;
             fillDeck();
-
         }
     }
 }
