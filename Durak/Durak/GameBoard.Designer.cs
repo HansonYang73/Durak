@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.mainDeck = new System.Windows.Forms.PictureBox();
             this.card1 = new System.Windows.Forms.PictureBox();
             this.card2 = new System.Windows.Forms.PictureBox();
@@ -50,12 +49,8 @@
             this.cardDefend4 = new System.Windows.Forms.PictureBox();
             this.cardDefend5 = new System.Windows.Forms.PictureBox();
             this.cardDefend6 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.endTurnButton = new System.Windows.Forms.Button();
             this.sortingComboBox = new System.Windows.Forms.ComboBox();
-            this.waitingLabel = new System.Windows.Forms.Label();
-            this.waitngLabelTimer = new System.Windows.Forms.Timer(this.components);
             this.botCard1 = new System.Windows.Forms.PictureBox();
             this.botCard2 = new System.Windows.Forms.PictureBox();
             this.botCard3 = new System.Windows.Forms.PictureBox();
@@ -65,6 +60,8 @@
             this.extraBotCards = new System.Windows.Forms.Label();
             this.nextCard = new System.Windows.Forms.Button();
             this.goBack = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mainMenuButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mainDeck)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.card1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.card2)).BeginInit();
@@ -305,29 +302,9 @@
             this.cardDefend6.TabStop = false;
             this.cardDefend6.Visible = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1267, 106);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Test";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1267, 153);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "clear";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // endTurnButton
             // 
-            this.endTurnButton.Location = new System.Drawing.Point(1290, 568);
+            this.endTurnButton.Location = new System.Drawing.Point(1290, 570);
             this.endTurnButton.Name = "endTurnButton";
             this.endTurnButton.Size = new System.Drawing.Size(89, 38);
             this.endTurnButton.TabIndex = 30;
@@ -340,29 +317,14 @@
             this.sortingComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sortingComboBox.FormattingEnabled = true;
             this.sortingComboBox.Items.AddRange(new object[] {
-            "Sort By Power",
-            "Sort By Suit",
-            "Sort By Number"});
-            this.sortingComboBox.Location = new System.Drawing.Point(1221, 487);
+            "Power",
+            "Suit",
+            "Number"});
+            this.sortingComboBox.Location = new System.Drawing.Point(1123, 580);
             this.sortingComboBox.Name = "sortingComboBox";
             this.sortingComboBox.Size = new System.Drawing.Size(121, 21);
             this.sortingComboBox.TabIndex = 31;
             this.sortingComboBox.SelectedIndexChanged += new System.EventHandler(this.sortingComboBox_SelectedIndexChanged);
-            // 
-            // waitingLabel
-            // 
-            this.waitingLabel.AutoSize = true;
-            this.waitingLabel.Location = new System.Drawing.Point(1196, 16);
-            this.waitingLabel.Name = "waitingLabel";
-            this.waitingLabel.Size = new System.Drawing.Size(150, 13);
-            this.waitingLabel.TabIndex = 32;
-            this.waitingLabel.Text = "Waiting for [Player] to attack...";
-            // 
-            // waitngLabelTimer
-            // 
-            this.waitngLabelTimer.Enabled = true;
-            this.waitngLabelTimer.Interval = 500;
-            this.waitngLabelTimer.Tick += new System.EventHandler(this.waitngLabelTimer_Tick);
             // 
             // botCard1
             // 
@@ -447,11 +409,35 @@
             this.goBack.UseVisualStyleBackColor = true;
             this.goBack.Click += new System.EventHandler(this.goBack_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1123, 561);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Sort Deck By:";
+            // 
+            // mainMenuButton
+            // 
+            this.mainMenuButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.mainMenuButton.Enabled = false;
+            this.mainMenuButton.Location = new System.Drawing.Point(1263, 660);
+            this.mainMenuButton.Name = "mainMenuButton";
+            this.mainMenuButton.Size = new System.Drawing.Size(139, 70);
+            this.mainMenuButton.TabIndex = 43;
+            this.mainMenuButton.Text = "Return to main menu";
+            this.mainMenuButton.UseVisualStyleBackColor = false;
+            this.mainMenuButton.Visible = false;
+            this.mainMenuButton.Click += new System.EventHandler(this.mainMenuButton_Click);
+            // 
             // GameBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1414, 742);
+            this.Controls.Add(this.mainMenuButton);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.goBack);
             this.Controls.Add(this.nextCard);
             this.Controls.Add(this.extraBotCards);
@@ -461,11 +447,8 @@
             this.Controls.Add(this.botCard3);
             this.Controls.Add(this.botCard2);
             this.Controls.Add(this.botCard1);
-            this.Controls.Add(this.waitingLabel);
             this.Controls.Add(this.sortingComboBox);
             this.Controls.Add(this.endTurnButton);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.cardDefend6);
             this.Controls.Add(this.cardDefend5);
             this.Controls.Add(this.cardDefend4);
@@ -545,12 +528,8 @@
         public System.Windows.Forms.PictureBox cardDefend4;
         public System.Windows.Forms.PictureBox cardDefend5;
         public System.Windows.Forms.PictureBox cardDefend6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button endTurnButton;
         private System.Windows.Forms.ComboBox sortingComboBox;
-        private System.Windows.Forms.Label waitingLabel;
-        private System.Windows.Forms.Timer waitngLabelTimer;
         public System.Windows.Forms.PictureBox botCard1;
         public System.Windows.Forms.PictureBox botCard2;
         public System.Windows.Forms.PictureBox botCard3;
@@ -560,5 +539,7 @@
         private System.Windows.Forms.Label extraBotCards;
         private System.Windows.Forms.Button nextCard;
         private System.Windows.Forms.Button goBack;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button mainMenuButton;
     }
 }

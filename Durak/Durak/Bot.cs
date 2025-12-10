@@ -36,14 +36,14 @@ namespace Durak
             else if (CanAttack(boardDeck))
             {
                 attackingDeck.SortByPower();
-                if (drawDeck.Size > 0 && MainDeck.GetDeck()[0].Power + 9 > attackingDeck.GetDeck()[0].Power)
-                { //If draw deck is greater than 0 and the power of the lowest card in your attacking hand is less than 9 power levels greater. play card
-                    return MainDeck.Play(attackingDeck.Get(0));
-                }//end game, guarantee extra attack if possible
-                else if (drawDeck.Size == 0)
-                {
-                    return MainDeck.Play(attackingDeck.Get(0));
-                }
+                //if (drawDeck.Size > 0 && MainDeck.GetDeck()[0].Power + 9 > attackingDeck.GetDeck()[0].Power)
+                //{ //If draw deck is greater than 0 and the power of the lowest card in your attacking hand is less than 9 power levels greater. play card
+                //    return MainDeck.Play(attackingDeck.Get(0));
+                //}//end game, guarantee extra attack if possible
+                //else if (drawDeck.Size == 0)
+                //{
+                //    return MainDeck.Play(attackingDeck.Get(0));
+                //}
                 return MainDeck.Play(attackingDeck.Get(0));
             }
 

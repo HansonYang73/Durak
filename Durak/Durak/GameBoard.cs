@@ -273,6 +273,11 @@ namespace Durak
                 attackOrDefend(card, cardInd);
             }
             fillDeck();
+
+            if (deck.Size == 0 && (mainPlayer.Size == 0 || botPlayer.Size == 0))
+            {
+                endGame();
+            }
         }
         private void attackOrDefend(PictureBox card, int i)
         {
@@ -398,18 +403,33 @@ namespace Durak
         }
 
 
-        //private void empowerCard_Click(object sender, EventArgs e)
-        //{
-        //    //pickUpLastEmpoweredCard();
-        //    //if (endedTurn && botEndedTurn)
-        //    //{
-        //    //    drawDecks();
-        //    //    fillBotDeck();
-        //    //    fillDeck();
+        private void endGame()
+        {
+            if (mainPlayer.Size == 0)
+            {
+                historyTextBox.AppendText("You Have Won!");
 
-        //    //    StartTurn();
-        //    //}
-        //}
+
+            }
+            else if (botPlayer.Size == 0)
+            {
+                historyTextBox.AppendText("You Have Lost!");
+
+            }
+            else
+            {
+                historyTextBox.AppendText("It's a Draw!");
+
+            }
+            foreach (PictureBox picturebox in playersCards)
+            {
+                picturebox.Enabled = false;
+
+            }
+            mainMenuButton.Enabled = true;
+            mainMenuButton.Visible = true;
+
+        }
 
         private void empowerCard_MouseEnter(object sender, EventArgs e)
         {
@@ -468,6 +488,7 @@ namespace Durak
                 ClearBoard();
                 turn++;
 
+
                 if (mainPlayer.Size >= 6)
                 {
                     drawDecks();
@@ -506,21 +527,6 @@ namespace Durak
                     mainPlayer.SortByNumber();
                     break;
             }
-        }
-
-        private void waitngLabelTimer_Tick(object sender, EventArgs e)
-        {
-            String waitingText = waitingLabel.Text;
-            int dots = waitingText.Count(dot => dot == '.');
-            String str = waitingText.Substring(0, waitingText.Length-dots);
-
-            dots = (dots + 1) % 4;
-            for (int i = 0; i < dots; i++)
-            {
-                str += ".";
-            }
-            
-            waitingLabel.Text = str;
         }
 
         private async Task StartTurn()
@@ -610,6 +616,12 @@ namespace Durak
                 }
 
                 //played = false;
+
+                if (deck.Size == 0 && (mainPlayer.Size == 0 || botPlayer.Size == 0))
+                {
+                    endGame();
+
+                }
             }
         }
 
@@ -655,6 +667,12 @@ namespace Durak
                 }
 
                 played = false;
+
+                if (deck.Size == 0 && (mainPlayer.Size == 0 || botPlayer.Size == 0))
+                {
+                    endGame();
+
+                }
             }
         }
 
@@ -668,6 +686,12 @@ namespace Durak
         {
             page--;
             fillDeck();
+        }
+
+        private void mainMenuButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Durak().Show();
         }
     }
 }
