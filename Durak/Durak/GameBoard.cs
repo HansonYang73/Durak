@@ -74,6 +74,8 @@ namespace Durak
         private bool endedTurn;
         private bool botEndedTurn;
 
+        private bool turnStarted;
+
         public GameBoard(int playerCount)
         {
             InitializeComponent();
@@ -83,6 +85,8 @@ namespace Durak
 
             endedTurn = false;
             botEndedTurn = false;
+
+            turnStarted = false;
 
 
             this.playerCount = playerCount;
@@ -474,7 +478,7 @@ namespace Durak
 
         private bool CanAttack(Card attackCard)
         {
-            return (boardDeck.Size == 0 || boardDeck.ContainsNumber(attackCard.Number)) && !played && boardDeck.Size % 2 == 0 && boardDeck.Size < 12;
+            return (boardDeck.Size == 0 || boardDeck.ContainsNumber(attackCard.Number)) && !played && boardDeck.Size % 2 == 0 && boardDeck.Size < 12 && turnStarted;
         }
 
         private bool CanDefend(Card card)
@@ -699,6 +703,7 @@ namespace Durak
 
         private async Task StartTurn()
         {
+            turnStarted = true;
             while (!endedTurn || !botEndedTurn)
             {
                 await WaitForAttacker();
@@ -713,6 +718,7 @@ namespace Durak
             {
                 EndTurn();
             }
+            turnStarted = false;
         }
 
         private async Task WaitForAttacker()
