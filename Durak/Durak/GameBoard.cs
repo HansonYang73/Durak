@@ -584,7 +584,6 @@ namespace Durak
 
         private void EndTurn()
         {
-            Console.WriteLine("End turn got called");
             if (endedTurn && botEndedTurn)
             {
                 if (boardDeck.Size % 2 == 1)
@@ -703,6 +702,7 @@ namespace Durak
 
         private async Task StartTurn()
         {
+            Console.WriteLine("Started start turn");
             turnStarted = true;
             while (!endedTurn || !botEndedTurn)
             {
@@ -714,11 +714,12 @@ namespace Durak
                 }
             }
 
+            turnStarted = false;
             if (boardDeck.Size > 0)
             {
                 EndTurn();
             }
-            turnStarted = false;
+            Console.WriteLine("Ended start turn");
         }
 
         private async Task WaitForAttacker()
